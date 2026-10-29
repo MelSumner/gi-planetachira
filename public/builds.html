@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Build check · Genshin Profile Viewer</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <script type="module" src="/builds.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="builds.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -14,9 +14,9 @@
       <h1>Genshin Profile Viewer</h1>
       <nav class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="/">Profile</a></li>
-          <li><a href="/artifacts">Artifacts</a></li>
-          <li><a href="/builds" aria-current="page">Build check</a></li>
+          <li><a href="./">Profile</a></li>
+          <li><a href="artifacts">Artifacts</a></li>
+          <li><a href="builds" aria-current="page">Build check</a></li>
         </ul>
       </nav>
       <form id="uid-form" class="uid-form">
@@ -32,8 +32,8 @@
       <h2>Build check</h2>
       <p>
         Compares each character's equipped artifacts with the stats HoYoLAB recommends for them, so you can see who needs better
-        artifacts. HoYoLAB often lists fewer than 4 substats, so you can choose each character's desired substats with
-        <strong>Edit desired substats</strong>. Your choices are saved on this computer and used everywhere in the app.
+        artifacts. HoYoLAB often lists fewer than 4 substats, so each character has a list of desired substats.
+        <span data-live-only>Choose them with <strong>Edit desired substats</strong>. Your choices are saved on this computer and used everywhere in the app.</span>
         Main stats still come from HoYoLAB.
       </p>
       <p id="status" class="status" role="status" aria-live="polite"></p>
@@ -53,7 +53,7 @@
               <strong>Grade:</strong> Great is 60% or higher, Good 45%, Needs work 30%, and Poor is below that.
               A missing piece or wrong main stat caps the grade at Needs work.
             </li>
-            <li><strong>Perfect:</strong> the right main stat plus every desired substat the piece can have. This needs 4 desired substats, so set them with Edit desired substats. A substat can't match the main stat, so an ATK% Sands only needs the other desired substats.</li>
+            <li><strong>Perfect:</strong> the right main stat plus every desired substat the piece can have. This needs 4 desired substats<span data-live-only>, so set them with Edit desired substats</span>. A substat can't match the main stat, so an ATK% Sands only needs the other desired substats.</li>
             <li><strong>Not built:</strong> characters with no artifacts equipped aren't graded and sort last.</li>
           </ul>
           <p class="muted">This is a quick check of stats only. It doesn't consider set bonuses, weapons or team needs.</p>

@@ -1,0 +1,2093 @@
+[
+  {
+    "id": 10000140,
+    "name": "Vodyanitsa",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 3,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/750126424226dddd1dbe8a75db5cbad1.png",
+    "weapon": {
+      "name": "Hymn of the Maelstrom",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/c506b7ca17eac4081f7749f68a3ad398.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000131,
+    "name": "Nicole",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/233e3baf9bd2c030a49b46c31173da9e.png",
+    "weapon": {
+      "name": "Angelos' Heptades",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/8bc74e76d3888a46a6279ba1a765978b.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000128,
+    "name": "Varka",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/bd2ad505d700cc342095d8ddd49d0c7b.png",
+    "weapon": {
+      "name": "Gest of the Mighty Wolf",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/3ccb453e2177597f059193e5c6e50735.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000125,
+    "name": "Columbina",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/3e648c232fb84bea351096c3f2129489.png",
+    "weapon": {
+      "name": "Nocturne's Curtain Call",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/045d1721aca8d78c25b640867cdb4171.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000119,
+    "name": "Lauma",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 5,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/4138ef0c4ecfba8f4e69b5ea1631e32d.png",
+    "weapon": {
+      "name": "Nightweaver's Looking Glass",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/7ce217365ba59cfa41e23ef13319dba9.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000114,
+    "name": "Skirk",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6851f37b/b3007bcbb99dd9b47af558ecc1bb65ff.png",
+    "weapon": {
+      "name": "Azurelight",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6851f37b/2b47d934eb09f3926908c37462569291.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000112,
+    "name": "Escoffier",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a947b/6c4f7f722b0226a1171ec265485de61c.png",
+    "weapon": {
+      "name": "Symphonist of Scents",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a947b/6d211f1902adc8a5946a5530489ab77a.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000107,
+    "name": "Citlali",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 3,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/abe2da348abe64c67d9c2763d2d8c4e7.png",
+    "weapon": {
+      "name": "Starcaller's Watch",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/dbf7751578357bde53f9b563aee72250.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000106,
+    "name": "Mavuika",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 3,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c54cf9fe971d6226b78ad795ced9bee8.png",
+    "weapon": {
+      "name": "A Thousand Blazing Suns",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6e57c13f34e89eae3339461e4f1afe3f.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000103,
+    "name": "Xilonen",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7c047dce3a1be70baa30f28111222e38.png",
+    "weapon": {
+      "name": "Peak Patrol Song",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/192f70211e4456786ebb3cb0c9222e43.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000096,
+    "name": "Arlecchino",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 2,
+    "friendship": 6,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1b277d9a90936da66f13918e3c9b828c.png",
+    "weapon": {
+      "name": "Crimson Moon's Semblance",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/30b345a334076865566f0da4e36d8d0d.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000089,
+    "name": "Furina",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0a024f0f2e06e99d67f112cd12eef4af.png",
+    "weapon": {
+      "name": "Splendor of Tranquil Waters",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a0c785ee7bcfa4e7dd19032b8c28c7fa.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000087,
+    "name": "Neuvillette",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/b30987d539b299dc89004d72274f5e89.png",
+    "weapon": {
+      "name": "Tome of the Eternal Flow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a9c72ec4bc54b9acf27362095da7af61.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000060,
+    "name": "Yelan",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 3,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e76d6bdb8f4aeea019df7856ef9eca3f.png",
+    "weapon": {
+      "name": "Aqua Simulacra",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0986345abd92564279c5a11f491bd6c0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000052,
+    "name": "Raiden Shogun",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/23aa979c8e86b7006a62039b9dd81c5b.png",
+    "weapon": {
+      "name": "Engulfing Lightning",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/481772ac498bbc4a9b61c694144096e5.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000037,
+    "name": "Ganyu",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 5,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2977be100672154bb7f5fc0d1abe0eb2.png",
+    "weapon": {
+      "name": "Amos' Bow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/fe810457e28088dc44b0500d90e417f5.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000030,
+    "name": "Zhongli",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 100,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/9dcda1d9e45a4f9e59266480ee2fc0c8.png",
+    "weapon": {
+      "name": "Black Tassel",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/badaa063427a6e3f39d9c031b3dddc24.png",
+      "rarity": 3,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000032,
+    "name": "Bennett",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 100,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/41a97aae8bf579ce350a90bbddc59fdf.png",
+    "weapon": {
+      "name": "Aquila Favonia",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2e40de313b0b488549fde96e553e7fcf.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000150,
+    "name": "Odette",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/38c83cb1b5c605921b3d773d9e5dffc2.png",
+    "weapon": {
+      "name": "Whitelake Frostfeather",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ddba75e7fec894e50aa646f1f0fe069.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000133,
+    "name": "Sandrone",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a44588e/417922ce01627959571b3355b9f462ac.png",
+    "weapon": {
+      "name": "A Teaspoon of Transcendence",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a44588e/0ce22fa824865975f716bc620a24a0d8.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000123,
+    "name": "Durin",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 3,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/2e43dacd8259a9fc447b3a314a354642.png",
+    "weapon": {
+      "name": "Athame Artis",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/9708b5d495021c4c5472f1615be537e0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000116,
+    "name": "Ineffa",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6889608b/f1723762f28902659f73902bbbda1fd6.png",
+    "weapon": {
+      "name": "Fractured Halo",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6889608b/9d23036ecf61183797246cf410765956.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000102,
+    "name": "Mualani",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 1,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1fa9d9e4780785e7ab6c2ac10e556527.png",
+    "weapon": {
+      "name": "Surf's Up",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ad90ce11f6af2cf1db44380af745e4ec.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000078,
+    "name": "Alhaitham",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a7eb0a9a0805bdecfaccfd450ca61102.png",
+    "weapon": {
+      "name": "Light of Foliar Incision",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d4ce6ec60d82eec0908027c16e9c1b68.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000071,
+    "name": "Cyno",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8eb1a5cca01c9e988581067a31e8b1d6.png",
+    "weapon": {
+      "name": "Staff of the Scarlet Sands",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0045e2a1f5eb25cabe20db8c79b3cfd6.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000063,
+    "name": "Shenhe",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 2,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d7f5dc584b2a9b02b8266084d96ad3cf.png",
+    "weapon": {
+      "name": "Calamity Queller",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/60e9db1560db9a7aa3b8a930cf30ce12.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000046,
+    "name": "Hu Tao",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/fbb8dbc972616d4b5004c2042e96c5c5.png",
+    "weapon": {
+      "name": "Staff of Homa",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d9ea5f48b504d48837cace02efdf1b8c.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000042,
+    "name": "Keqing",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/89d47da9c1ed3ade59b3c9f7fd00f1e8.png",
+    "weapon": {
+      "name": "Mistsplitter Reforged",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/3c881bf12a6b24197d9df60b81329e52.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 4
+    }
+  },
+  {
+    "id": 10000007,
+    "name": "Traveler",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 95,
+    "constellation": 4,
+    "friendship": 0,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/26/10dede5c05005ebb96bbe01f8408e775_7397178366194463086.png",
+    "weapon": {
+      "name": "Exaiphanes Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000065,
+    "name": "Kuki Shinobu",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 95,
+    "constellation": 6,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/caa2e14875915abee78b186b61fd8f3a.png",
+    "weapon": {
+      "name": "Toukabou Shigure",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/74ef003a497f24a85e4e1e0af0793530.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000023,
+    "name": "Xiangling",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 95,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c836c2dc7d71fe8065ae2798d360167b.png",
+    "weapon": {
+      "name": "\"The Catch\"",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/643071ffc7526446b48101f159ee0437.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000014,
+    "name": "Barbara",
+    "element": "Hydro",
+    "rarity": 4,
+    "level": 95,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f55430aba2d84b36d64136958c58c93a.png",
+    "weapon": {
+      "name": "Oathsworn Eye",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f9308f15888ca90af00ff12c5223c1a9.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000143,
+    "name": "Vesna",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/88e4654b892a5ada8d0fd21301c07518.png",
+    "weapon": {
+      "name": "Beyond the Chrysalis",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6ab31686/ecedbeb41258bf291e127603ea519449.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000130,
+    "name": "Linnea",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/69d58c7d/d1c44e49e1fcfdf9474ba6c2d2c9369d.png",
+    "weapon": {
+      "name": "Golden Frostbound Oath",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/69d58c7d/f2f6618938b4163623b68daf1b165fe0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000129,
+    "name": "Lohen",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 7,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/e3c37d250fc8af7e63992f6bd50a3ee7.png",
+    "weapon": {
+      "name": "Disaster and Remorse",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/fce1c32ef5e9cd3bd775dfdf5c0de06c.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000126,
+    "name": "Zibai",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/b7ea76f3f77eec4997dad6576c183939.png",
+    "weapon": {
+      "name": "Lightbearing Moonshard",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/fa2ac4d5a0238fb674c44670652fc284.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000122,
+    "name": "Nefer",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68f81e8b/3599d082a372edcd04d8ba377b430180.png",
+    "weapon": {
+      "name": "Reliquary of Truth",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68f81e8b/23a39268794ca7cb0d4e30c459ce823b.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000120,
+    "name": "Flins",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/6aae9f16cbe14ac60dd6eb2956e4acf2.png",
+    "weapon": {
+      "name": "Bloodsoaked Ruins",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/51a4244e38d1011926a21f25942e78c6.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000111,
+    "name": "Varesa",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 6,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67e3357c/34596fcb08c5c4b4e91379507e75dba7.png",
+    "weapon": {
+      "name": "Vivid Notions",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67e3357c/db3c23247fa556442b7d1fdd5e4a4fb6.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000104,
+    "name": "Chasca",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c009627a0c0289646a10d41779001b9d.png",
+    "weapon": {
+      "name": "Astral Vulture's Crimson Plumage",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/afac47d999995ce3577c7034ff277c44.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000101,
+    "name": "Kinich",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ec67809641b4f1d2d2e87bc0e1e88b93.png",
+    "weapon": {
+      "name": "Fang of the Mountain King",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a9184535c8743e8da52fa2debd54f7d8.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000099,
+    "name": "Emilie",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/91922ba4b8882f158eb0d26c30ab74d5.png",
+    "weapon": {
+      "name": "Lumidouce Elegy",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/815db248eebc121db24905994b274150.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000098,
+    "name": "Clorinde",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/67796a8312172b6b2a82d3097452d141.png",
+    "weapon": {
+      "name": "Absolution",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0f4646d85544fa3087186883cd9918c9.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000094,
+    "name": "Chiori",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2eeb4b86d43acc81c6f9b37bdba03e83.png",
+    "weapon": {
+      "name": "Uraku Misugiri",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c8d3a5b868846ec4819294483de2f90b.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000093,
+    "name": "Xianyun",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/20c3618fbc7304c6b716e2733b2d4db3.png",
+    "weapon": {
+      "name": "Crane's Echoing Call",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/876ff00e5e80e02cc801bc6c37e48b84.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000091,
+    "name": "Navia",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/dd80b2174e316e6a9a4f699dba23d6af.png",
+    "weapon": {
+      "name": "Verdict",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/89c37ece820a0a1eca5f2b65a98a5e7a.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000086,
+    "name": "Wriothesley",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7786cf3f9620456f6d14a226dfdcca67.png",
+    "weapon": {
+      "name": "Cashflow Supervision",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f540cf493ce73c0b3afa3bc32940bfa0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000084,
+    "name": "Lyney",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/56d665e0298a876a4393ea385db61da3.png",
+    "weapon": {
+      "name": "Skyward Harp",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/504e181be5a8ba069b7249a3f7cf978d.png",
+      "rarity": 5,
+      "level": 80,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000082,
+    "name": "Baizhu",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/afc87fc731e998f8f0f956f03de1cf21.png",
+    "weapon": {
+      "name": "Jadefall's Splendor",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ba93fa1f1b51d815a2ee1478f34e84ef.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000075,
+    "name": "Wanderer",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/555d1f67bc5ea5ef1dfb39f47287ca11.png",
+    "weapon": {
+      "name": "Tulaytullah's Remembrance",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f1bd10806edde7470a4e4a00d63692f5.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000073,
+    "name": "Nahida",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/823e31bf43f378bd66c394985a323da8.png",
+    "weapon": {
+      "name": "A Thousand Floating Dreams",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7cf365df4327805751ed47e8cda853bb.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 4
+    }
+  },
+  {
+    "id": 10000069,
+    "name": "Tighnari",
+    "element": "Dendro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2747d92218297b5094d4b8fe6d5f6475.png",
+    "weapon": {
+      "name": "Hunter's Path",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/dc35942eb26612d7759acededff35fa0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000066,
+    "name": "Kamisato Ayato",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 1,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e350954e7c5f587e8c1e9fd5931ebac2.png",
+    "weapon": {
+      "name": "Haran Geppaku Futsu",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c0d5a9cc91eec72ee2d77ead379a7331.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000058,
+    "name": "Yae Miko",
+    "element": "Electro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/54f9f46e282f81dc06c45d2783e0206a.png",
+    "weapon": {
+      "name": "Kagura's Verity",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/5df4b80100a07922792ac85362ee6af8.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000057,
+    "name": "Arataki Itto",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 3,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/122eddc88eb224d79ae466ca0c615ce7.png",
+    "weapon": {
+      "name": "Redhorn Stonethresher",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a3d93fd480b8838c79d99aa8f90e7081.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000051,
+    "name": "Eula",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/4ea05e98ca62e2d3c7de83ea6bcf641b.png",
+    "weapon": {
+      "name": "Song of Broken Pines",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/13a14bc2183b1a33041042b77ac4b640.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000049,
+    "name": "Yoimiya",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7d324e9ea99247b744b08f7016649d1d.png",
+    "weapon": {
+      "name": "Thundering Pulse",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d3cdbcebbaac5598dcd973424e685b8b.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000047,
+    "name": "Kaedehara Kazuha",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 2,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7d56eb845d4f982757a942a97f88b958.png",
+    "weapon": {
+      "name": "Freedom-Sworn",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/fcc21d0d30236aa146f099de4e4bdfa8.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 4
+    }
+  },
+  {
+    "id": 10000041,
+    "name": "Mona",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/e73c8896a2a5e52cfaa8847daaee53b8.png",
+    "weapon": {
+      "name": "Thrilling Tales of Dragon Slayers",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/aff08755a2149ffb6c0fa7d1d189a222.png",
+      "rarity": 3,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000038,
+    "name": "Albedo",
+    "element": "Geo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/1ed38170d66966f44b6e48f0f26605b1.png",
+    "weapon": {
+      "name": "Cinnabar Spindle",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8c150d11be0738ee0188f6f5a2a56f86.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000035,
+    "name": "Qiqi",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2825ff5127afc078dd1bd3e1b2e39996.png",
+    "weapon": {
+      "name": "Favonius Sword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cfda75195bd9c341e314a56e976d532f.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000033,
+    "name": "Tartaglia",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 3,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e23dde6e455a2dc62dcebbf2d41f7f72.png",
+    "weapon": {
+      "name": "Polar Star",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/50ec4928dd095307807b59617a889b62.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000029,
+    "name": "Klee",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 4,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/54f52fb2be4b82fdbde390db0fce89ea.png",
+    "weapon": {
+      "name": "Lost Prayer to the Sacred Winds",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/856b4ea453095a88e8cbb3f438d3fa83.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000026,
+    "name": "Xiao",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6dca29648877d9140b67d5ccc3db662e.png",
+    "weapon": {
+      "name": "Primordial Jade Winged-Spear",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/4b8624f9f3d335b504d879e9b1e07ae9.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000022,
+    "name": "Venti",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/da04983f26f201db1a287bf922cdcaff.png",
+    "weapon": {
+      "name": "The Daybreak Chronicles",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/1112f5bf9c69ad6a989b8cb259497f6c.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000016,
+    "name": "Diluc",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/929d6645727e400b3a294b559e36a03f.png",
+    "weapon": {
+      "name": "Wolf's Gravestone",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/45c64eb0f4dfffe24ab9e993616f02c6.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000003,
+    "name": "Jean",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/eabf3af20320ed8dc3fed73ab11148cc.png",
+    "weapon": {
+      "name": "Skyward Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ecb922197e45697d9edde75af4b8df93.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000002,
+    "name": "Kamisato Ayaka",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 90,
+    "constellation": 0,
+    "friendship": 8,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f616e8fdc168d5e5314929a492788e93.png",
+    "weapon": {
+      "name": "Primordial Jade Cutter",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6a538e31e42088f7ba572556cc5862e0.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000148,
+    "name": "Alyosha",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/faa96b61235674d245e3134c4175f684.png",
+    "weapon": {
+      "name": "Favonius Lance",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000132,
+    "name": "Prune",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a0cf98d/e1a65f12e336519381e38a4068d537d3.png",
+    "weapon": {
+      "name": "Skyward Atlas",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d3f398d9ee417e931b1e273242dd8008.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000121,
+    "name": "Aino",
+    "element": "Hydro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/cfec735e9e867016be94f500e9dae122.png",
+    "weapon": {
+      "name": "Master Key",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/68c0b17a/bf204697b55c81571860b964707430e7.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000110,
+    "name": "Iansan",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67e3357c/f44e8b4c7a61a4abb2aa2ccfe9b810cd.png",
+    "weapon": {
+      "name": "Tamayuratei no Ohanashi",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7530c502a61c663424986c74899e4b1b.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000090,
+    "name": "Chevreuse",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/817f1d6da2a3ff6e6bfedeb39104ad71.png",
+    "weapon": {
+      "name": "Deathmatch",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e28812a4dbe5207d8d88c68a53212692.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000083,
+    "name": "Lynette",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/5dad272ce992b32d3aa7a708869d1a4a.png",
+    "weapon": {
+      "name": "The Black Sword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0d45932d85272f2efe3fb18418f159d0.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000076,
+    "name": "Faruzan",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/58a03d4cded3b6e93af3cc3efb708031.png",
+    "weapon": {
+      "name": "Fading Twilight",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ab3de086b1a1f6a42d1b5c8ae32f3b15.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000056,
+    "name": "Kujou Sara",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/3dc3a368e5c3be42a05afb7a9fdc9c41.png",
+    "weapon": {
+      "name": "Elegy for the End",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e9555699ff95fac410422d9dfd7e631a.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 3
+    }
+  },
+  {
+    "id": 10000048,
+    "name": "Yanfei",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/9d2730b17e4cfdc85b52b163948a8c12.png",
+    "weapon": {
+      "name": "Lost Prayer to the Sacred Winds",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/856b4ea453095a88e8cbb3f438d3fa83.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000043,
+    "name": "Sucrose",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/27ee1aba588f3e8e42800249fe1047e8.png",
+    "weapon": {
+      "name": "Sacrificial Fragments",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/807ae55311a3a8382194a656e214e7b1.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000039,
+    "name": "Diona",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/3de7b18fbecffbb57a73fe5032d24950.png",
+    "weapon": {
+      "name": "Sacrificial Bow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/4a03625fdbc739dca379573871a4c2ca.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000031,
+    "name": "Fischl",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/207a0e35e0637a2bcb0a28fdfa61f7a4.png",
+    "weapon": {
+      "name": "Mitternachts Waltz",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/425d13a6970fbdb3802304349b4f7de3.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000027,
+    "name": "Ningguang",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/3ae1f1d40773cd13d361e329a7efd887.png",
+    "weapon": {
+      "name": "Solar Pearl",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/be0408e0e9d8356566c6cbad21b959d7.png",
+      "rarity": 4,
+      "level": 53,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000025,
+    "name": "Xingqiu",
+    "element": "Hydro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/cf352253ba22524007154d6d6fc66b55.png",
+    "weapon": {
+      "name": "Sacrificial Sword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8d40dcb0e8e25ad6c5940095fa6984ab.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000024,
+    "name": "Beidou",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/bc2903d1a46616c871d5108d033a463d.png",
+    "weapon": {
+      "name": "Blackcliff Slasher",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/794c87023c6bb414a9a1ba03d52d0297.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000021,
+    "name": "Amber",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/9fae2c3ff5862c261c8ad7200084f567.png",
+    "weapon": {
+      "name": "The First Great Magic",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/834006ea86ff338ed823d2ccd09a1169.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000015,
+    "name": "Kaeya",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 90,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/c1d2a8e0948af4942feb5d086500528b.png",
+    "weapon": {
+      "name": "Kagotsurube Isshin",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d0bc1a9d160a598e7cfe669f71402662.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000109,
+    "name": "Yumemizuki Mizuki",
+    "element": "Anemo",
+    "rarity": 5,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1cebf43ac944ad3ff2a0581bebe309d8.png",
+    "weapon": {
+      "name": "Sunny Morning Sleep-In",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/fa7fc655e5c1bab724c7893ec3f58d91.png",
+      "rarity": 5,
+      "level": 70,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000127,
+    "name": "Illuga",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6966dc8c/64666707baedabc3e6a7d80738d24730.png",
+    "weapon": {
+      "name": "Mountain-Bracing Bolt",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/27f9739cc6d08a99e6d902f1f9895903.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000105,
+    "name": "Ororon",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/64a90c55b4bb72cf06068f3d82dbc8da.png",
+    "weapon": {
+      "name": "Rainbow Serpent's Rain Bow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/430a2ee3f7bb4817d96e4179110ffb21.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000080,
+    "name": "Mika",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 6,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f239b3032e85ebb64554e69a58eec91b.png",
+    "weapon": {
+      "name": "Dialogues of the Desert Sages",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/004899f4640baadfa2be9d9dc0e90419.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000055,
+    "name": "Gorou",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a3a8da43e8c4d76986237ab784e49070.png",
+    "weapon": {
+      "name": "Favonius Warbow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f0b8edcc330cd9de1dcf97eccb20cbaf.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000053,
+    "name": "Sayu",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1791a03bc18b12a8030a4e16df2ea5f6.png",
+    "weapon": {
+      "name": "Akuoumaru",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/3b3d34b3ebc2dc1f5bf989d663d42ec6.png",
+      "rarity": 4,
+      "level": 50,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000050,
+    "name": "Thoma",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/57ede6ce84e7030b58af29520198119b.png",
+    "weapon": {
+      "name": "Dragon's Bane",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cf0f39f3f9fddd9fdcafe921ca8cff1a.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000045,
+    "name": "Rosaria",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7987cb608a5375cdfd1e34dda9455a31.png",
+    "weapon": {
+      "name": "Frostbreath",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/42f9925ccf0ed36513ab375d0ccd606f.png",
+      "rarity": 4,
+      "level": 86,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000036,
+    "name": "Chongyun",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/38b5bd856ea9fff842477a77265da49b.png",
+    "weapon": {
+      "name": "Makhaira Aquamarine",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cc4498636d1de587406d20b7c5f84c60.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000034,
+    "name": "Noelle",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 80,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1eb5023b8ca517a5fe27316b3771a191.png",
+    "weapon": {
+      "name": "The Bell",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d7f9ca521e414f63dfe24876b91cc139.png",
+      "rarity": 4,
+      "level": 82,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000054,
+    "name": "Sangonomiya Kokomi",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 70,
+    "constellation": 0,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/90652aa121930a54372ede5e53b4615e.png",
+    "weapon": {
+      "name": "Everlasting Moonglow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c7638821093bb021334a85900466137f.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000088,
+    "name": "Charlotte",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 70,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f4e68e94225fa95112ae03c0a6d10938.png",
+    "weapon": {
+      "name": "Wandering Evenstar",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e8d25e1a09cbca9b5069ad93c00d7b68.png",
+      "rarity": 4,
+      "level": 80,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000020,
+    "name": "Razor",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 70,
+    "constellation": 6,
+    "friendship": 8,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0a8a2c7373dcc8f2549b645d0c3374b7.png",
+    "weapon": {
+      "name": "Serpent Spine",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8add3ad74e3838695ee23cacbe99e776.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000095,
+    "name": "Sigewinne",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 60,
+    "constellation": 0,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/9236f61b549f9dbca318c3a8fd46bcb4.png",
+    "weapon": {
+      "name": "Silvershower Heartstrings",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/49934c2c44b1f643f96bc4b65b534eca.png",
+      "rarity": 5,
+      "level": 70,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000079,
+    "name": "Dehya",
+    "element": "Pyro",
+    "rarity": 5,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e7beb9e36337d7f64139ee0c97d1a93a.png",
+    "weapon": {
+      "name": "Beacon of the Reed Sea",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e1eefe2e1a8a70ad45823a6af99e7d7a.png",
+      "rarity": 5,
+      "level": 80,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000070,
+    "name": "Nilou",
+    "element": "Hydro",
+    "rarity": 5,
+    "level": 60,
+    "constellation": 2,
+    "friendship": 9,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2cb9c9350cf6ff26b2ff293cce139cab.png",
+    "weapon": {
+      "name": "Key of Khaj-Nisut",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d51d92c819500a9c2a4fb200ffeb8c08.png",
+      "rarity": 5,
+      "level": 90,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000062,
+    "name": "Aloy",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 60,
+    "constellation": 0,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/ac42af1ac5dff78b080c5bdaa1bfbc76.png",
+    "weapon": {
+      "name": "Predator",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/95be77123f875f3393bc2a08f5eabe20.png",
+      "rarity": 4,
+      "level": 70,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000124,
+    "name": "Jahoda",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 4,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/8ce70ee6c41e48a78bdb1a17be8b554e.png",
+    "weapon": {
+      "name": "Sequence of Solitude",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a947b/74182d9654a8ed410e405ca87475812f.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000115,
+    "name": "Dahlia",
+    "element": "Hydro",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6851f37b/9e5b1c5805948358c656e702e5eecae2.png",
+    "weapon": {
+      "name": "Sacrificial Sword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/8d40dcb0e8e25ad6c5940095fa6984ab.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000100,
+    "name": "Kachina",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2c4b6f3e78da44cbe10f9cbc37a50fe1.png",
+    "weapon": {
+      "name": "Mountain-Bracing Bolt",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/27f9739cc6d08a99e6d902f1f9895903.png",
+      "rarity": 4,
+      "level": 50,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000092,
+    "name": "Gaming",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1238a7679cc90e138ec793b08aa853c7.png",
+    "weapon": {
+      "name": "Tidal Shadow",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/95def815e975a9fb89e9697209de8578.png",
+      "rarity": 4,
+      "level": 40,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000085,
+    "name": "Freminet",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/34ef1ba51a4893d9df4be717e56891ae.png",
+    "weapon": {
+      "name": "\"Ultimate Overlord's Mega Magic Sword\"",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/2c73799dd587e54c75af09cf87d8576a.png",
+      "rarity": 4,
+      "level": 80,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000081,
+    "name": "Kaveh",
+    "element": "Dendro",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 10,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/a34ebd3dba93cda6fba3cc97a995822e.png",
+    "weapon": {
+      "name": "Mailed Flower",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f9c8a43e26e2e0cfca8d757a07d4c235.png",
+      "rarity": 4,
+      "level": 60,
+      "refinement": 2
+    }
+  },
+  {
+    "id": 10000067,
+    "name": "Collei",
+    "element": "Dendro",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/eaf61637b76953695940fe1ceedb18a0.png",
+    "weapon": {
+      "name": "The Viridescent Hunt",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/4cb4be711bf4af4b3ca02a78cc72bd16.png",
+      "rarity": 4,
+      "level": 90,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000064,
+    "name": "Yun Jin",
+    "element": "Geo",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 7,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/45fc56fa83f5447d6a61677f514a9131.png",
+    "weapon": {
+      "name": "Lithic Spear",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/1117bae36b42e7ace47a411cb4b04ca1.png",
+      "rarity": 4,
+      "level": 20,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000061,
+    "name": "Kirara",
+    "element": "Dendro",
+    "rarity": 4,
+    "level": 60,
+    "constellation": 6,
+    "friendship": 7,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/49767b6d7070afddae937e417253bb3f.png",
+    "weapon": {
+      "name": "Xiphos' Moonlight",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6e73725d6886d81d5a9b6525a2bdb31f.png",
+      "rarity": 4,
+      "level": 70,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000113,
+    "name": "Ifa",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/681a947b/0b3127bb721214a48b20001c64ab727a.png",
+    "weapon": {
+      "name": "Ballad of the Boundless Blue",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/e8e43cfd0ba489f79f5fb138e2178554.png",
+      "rarity": 4,
+      "level": 60,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000108,
+    "name": "Lan Yan",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/eba829f8ca4b38367c4a2551d0e228ae.png",
+    "weapon": {
+      "name": "Sacrificial Jade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/95e2a7c637afe59f0ec81b2da9ad49c9.png",
+      "rarity": 4,
+      "level": 32,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000097,
+    "name": "Sethos",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/62ddf4187c2aea2dda21813b9d90f27f.png",
+    "weapon": {
+      "name": "Ibis Piercer",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/6e37803f70f76be9df083b99a5af8307.png",
+      "rarity": 4,
+      "level": 80,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000077,
+    "name": "Yaoyao",
+    "element": "Dendro",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d7ec9b285faccd804b54fa026dde96e8.png",
+    "weapon": {
+      "name": "Favonius Lance",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7db45b7a84bb80468aaf0f5f430e9bdc.png",
+      "rarity": 4,
+      "level": 80,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000074,
+    "name": "Layla",
+    "element": "Cryo",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 8,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/523506069469ad5f09b79daf6ed3a285.png",
+    "weapon": {
+      "name": "Wolf-Fang",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/86a26398db607012d49be9f7e0dd0476.png",
+      "rarity": 4,
+      "level": 50,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000072,
+    "name": "Candace",
+    "element": "Hydro",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 1,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/9ef120c399afbf7f136034b68d721d44.png",
+    "weapon": {
+      "name": "Skyward Spine",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/32df7904999ca5913e0501847a6f57b0.png",
+      "rarity": 5,
+      "level": 70,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000068,
+    "name": "Dori",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 3,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/d4892796ad70d139c13a6e42d170b877.png",
+    "weapon": {
+      "name": "Sacrificial Greatsword",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/b79312ddc86e05133b8a8d984f9931e1.png",
+      "rarity": 4,
+      "level": 61,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000059,
+    "name": "Shikanoin Heizou",
+    "element": "Anemo",
+    "rarity": 4,
+    "level": 50,
+    "constellation": 6,
+    "friendship": 5,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/c4d144d578bf42c6f03ac240a3bf2c3c.png",
+    "weapon": {
+      "name": "Dawning Frost",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/692f7d8b/182fc5756eed43ba0f54878cf0463207.png",
+      "rarity": 4,
+      "level": 50,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000044,
+    "name": "Xinyan",
+    "element": "Pyro",
+    "rarity": 4,
+    "level": 40,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/699e3449/b3085c5955360785fc5a1c25ab1a15f4.png",
+    "weapon": {
+      "name": "Rainslasher",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/de1e307e1104fbf7c8f7a7ef5cb143e1.png",
+      "rarity": 4,
+      "level": 16,
+      "refinement": 5
+    }
+  },
+  {
+    "id": 10000006,
+    "name": "Lisa",
+    "element": "Electro",
+    "rarity": 4,
+    "level": 40,
+    "constellation": 6,
+    "friendship": 2,
+    "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/415cb4af1a402f97aebfcf8edc2ca235.png",
+    "weapon": {
+      "name": "Hakushin Ring",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/29ef5797e2374e7f3a6996dc02c72d83.png",
+      "rarity": 4,
+      "level": 56,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000118,
+    "name": "Manekina",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 20,
+    "constellation": 0,
+    "friendship": 0,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/10/16/7328f006a498626b32a1e187c0dba1ea_7198130205836288559.png",
+    "weapon": {
+      "name": "Dull Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "rarity": 1,
+      "level": 1,
+      "refinement": 1
+    }
+  },
+  {
+    "id": 10000117,
+    "name": "Manekin",
+    "element": "Cryo",
+    "rarity": 5,
+    "level": 20,
+    "constellation": 0,
+    "friendship": 0,
+    "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/10/16/af27ded694227c5c49f0f75730eecbb9_5249597265949308504.png",
+    "weapon": {
+      "name": "Dull Blade",
+      "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/0b590e80914fdb8e348323fff888be0c.png",
+      "rarity": 1,
+      "level": 1,
+      "refinement": 1
+    }
+  }
+]

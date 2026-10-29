@@ -1,0 +1,40 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['public/**', 'data/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # GitHub Pages needs the repo to be public (on the free plan).
+    if: ${{ !github.event.repository.private }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site
+        run: |
+          test -f data/meta.json || { echo "Run 'npm run export' and commit data/ first."; exit 1; }
+          mkdir _site
+          cp public/* _site/
+          cp -r data _site/data
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

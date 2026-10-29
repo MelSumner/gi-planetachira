@@ -1,5 +1,5 @@
 import { characterView } from './character-view.js';
-import { $, h, initPage, stars, syncUid } from './lib.js';
+import { $, apiUrl, h, initPage, stars, syncUid } from './lib.js';
 
 const status = $('status');
 const uidInput = $('uid');
@@ -13,7 +13,7 @@ async function load(uid, { refresh = false } = {}) {
   status.textContent = `Loading UID ${uid}…`;
   status.classList.remove('error');
   try {
-    const res = await fetch(`/api/profile/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`);
+    const res = await fetch(apiUrl('profile', uid, { refresh }));
     const body = await res.json();
     if (!res.ok) throw new Error(body.error ?? `HTTP ${res.status}`);
     profile = body;
@@ -142,7 +142,7 @@ async function loadRoster(uid, { refresh = false } = {}) {
   }
   body.replaceChildren(h('p', {}, 'Loading all characters…'));
   try {
-    const res = await fetch(`/api/roster/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`);
+    const res = await fetch(apiUrl('roster', uid, { refresh }));
     const data = await res.json();
     if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
     roster = data;
@@ -184,7 +184,7 @@ function renderRoster() {
           h(
             'div',
             { class: 'roster-info' },
-            h('h3', {}, h('a', { href: `/character?uid=${encodeURIComponent(currentUid())}&id=${c.id}` }, c.name)),
+            h('h3', {}, h('a', { href: `character?uid=${encodeURIComponent(currentUid())}&id=${c.id}` }, c.name)),
             h('p', {}, stars(c.rarity), ` ${c.element}`),
             h('p', {}, `Lv. ${c.level} · C${c.constellation} · Friendship ${c.friendship}`),
             c.weapon ? h('p', { class: 'roster-weapon' }, `${c.weapon.name} · Lv. ${c.weapon.level} R${c.weapon.refinement}`) : null,
@@ -217,7 +217,7 @@ async function loadRecommendations(uid, { refresh = false } = {}) {
   recommendations = {};
   if (!rosterEnabled) return;
   try {
-    const res = await fetch(`/api/recommendations/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`);
+    const res = await fetch(apiUrl('recommendations', uid, { refresh }));
     if (res.ok) recommendations = await res.json();
   } catch {
     // Highlighting is optional; the build still renders without it.

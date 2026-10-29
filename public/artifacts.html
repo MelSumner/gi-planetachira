@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Artifacts · Genshin Profile Viewer</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <script type="module" src="/artifacts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="artifacts.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -14,9 +14,9 @@
       <h1>Genshin Profile Viewer</h1>
       <nav class="site-nav" aria-label="Main">
         <ul>
-          <li><a href="/">Profile</a></li>
-          <li><a href="/artifacts" aria-current="page">Artifacts</a></li>
-          <li><a href="/builds">Build check</a></li>
+          <li><a href="./">Profile</a></li>
+          <li><a href="artifacts" aria-current="page">Artifacts</a></li>
+          <li><a href="builds">Build check</a></li>
         </ul>
       </nav>
       <form id="uid-form" class="uid-form">
@@ -38,7 +38,7 @@
         <label><input type="radio" name="source" value="equipped" /> <span>Equipped on characters <span id="equipped-meta" class="muted"></span></span></label>
       </fieldset>
 
-      <details id="import" class="import-panel">
+      <details id="import" class="import-panel" data-live-only>
         <summary>Import full inventory (including unequipped artifacts)</summary>
         <div class="import-body">
           <p>
@@ -110,7 +110,7 @@
 
     <footer class="site-footer">
       <p>Equipped artifacts come from HoYoLAB. The full inventory comes from your imported GOOD file. Crit Value = 2 × CRIT Rate + CRIT DMG from substats.
-        Fit = substat rolls in the wearer's recommended stats, compared with a strong piece (see <a href="/builds">Build check</a>).
+        Fit = substat rolls in the wearer's recommended stats, compared with a strong piece (see <a href="builds">Build check</a>).
         Perfect = the right main stat plus every desired substat the piece can have, once 4 desired substats are chosen.
         Roll counts for imported artifacts are estimated from their values.</p>
     </footer>

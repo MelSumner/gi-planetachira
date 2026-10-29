@@ -1,4 +1,4 @@
-import { SOURCE_LABELS, fmtValue, h, helperTeamUrl, isPerfect, mainStatContent, mainStatOk, perfectBadge, stars, wantedSubsFor } from './lib.js';
+import { SOURCE_LABELS, fmtValue, h, helperTeamUrl, isPerfect, isStatic, mainStatContent, mainStatOk, perfectBadge, stars, wantedSubsFor } from './lib.js';
 
 const TALENT_NAMES = ['Normal Attack', 'Elemental Skill', 'Elemental Burst'];
 
@@ -95,8 +95,8 @@ export function characterView(c, { uid, rec, level = 3, talentNote }) {
               { class: 'legend muted' },
               h('span', { class: 'rec-mark', 'aria-hidden': 'true' }, '✓'),
               ` marks recommended main stats and desired substats. Desired substats for ${c.name} (${SOURCE_LABELS[rec.source] ?? 'HoYoLAB'}): ${[...wanted].join(', ')}. `,
-              h('a', { href: `/builds?uid=${encodeURIComponent(uid)}#build-${c.id}` }, 'Edit desired substats'),
-              helperUrl ? ' · ' : null,
+              isStatic() ? null : h('a', { href: `builds?uid=${encodeURIComponent(uid)}#build-${c.id}` }, 'Edit desired substats'),
+              helperUrl && !isStatic() ? ' · ' : null,
               helperUrl
                 ? h('a', { href: helperUrl, rel: 'noopener noreferrer', target: '_blank' }, `${c.name} builds on Genshin Helper Team`, h('span', { class: 'visually-hidden' }, ' (opens in a new tab)'))
                 : null,

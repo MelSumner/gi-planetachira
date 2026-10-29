@@ -64,6 +64,26 @@ HoYoLAB usually recommends only 1–3 substats, so each row has **Edit desired s
 
 Each row also links to that character's [Genshin Helper Team](https://genshin-impact-helper-team.github.io/genshin-builds/en/) build guide. Their license doesn't allow copying their recommendations, so the app only links to them.
 
+### Static site (GitHub Pages)
+
+The pages also work without the server, from a snapshot of your data committed in `data/`:
+
+```sh
+npm run export                  # writes data/*.json for the default UID (needs HOYOLAB_COOKIE)
+npm run export -- 635783945     # specific UID
+```
+
+The export always fetches fresh data and includes your desired substats and, if imported, your GOOD inventory. It refuses to write anything that contains a cookie value. Commit `data/` and push.
+
+When the pages can't reach the server, they read `data/` instead. The header shows "Data current as of …" in place of the UID form, and the parts that need the server (Refresh, Edit desired substats, GOOD import) are hidden.
+
+To publish:
+1. Make the repo public (Pages needs that on the free plan).
+2. In **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. Run the **Deploy static site to GitHub Pages** workflow from the Actions tab. After that, it runs on every push that changes `public/` or `data/`.
+
+The site is published at `https://melsumner.github.io/gi-planetachira/`. Everything in `data/` is public there, including your UID, characters and artifacts. Cookies and `.data/` are never included.
+
 ### CLI
 
 ```sh
@@ -110,4 +130,8 @@ Notes on the ID mapping:
 - `src/characters.ts`: converts HoYoLAB character details into the showcase `Character` shape
 - `src/priorities.ts`: stores your desired substats per character in `.data/priorities.json`
 - `src/server.ts`: web server (static pages + JSON API)
+- `src/data.ts`: builds the data behind each API route (used by the server and the export)
+- `src/export.ts`: writes a snapshot of the API data to `data/` for the static site
+- `data/`: the committed snapshot used by the static site
+- `.github/workflows/pages.yml`: deploys `public/` + `data/` to GitHub Pages
 - `public/`: the pages (plain HTML/CSS/JS, no build step). `lib.js` holds shared helpers, `app.js` drives the profile page, `artifacts.js` the artifacts page, `builds.js` the build check page and `character.js` the character page. `character-view.js` renders a character panel for both the profile and character pages.

@@ -1,5 +1,5 @@
 import { characterView } from './character-view.js';
-import { $, h, initPage, syncUid } from './lib.js';
+import { $, apiUrl, h, initPage, syncUid } from './lib.js';
 
 const status = $('status');
 const uidInput = $('uid');
@@ -64,15 +64,14 @@ function render({ focus = false } = {}) {
 
 async function load(uid, { refresh = false } = {}) {
   setStatus(`Loading characters for UID ${uid}…`);
-  const q = refresh ? '?refresh' : '';
   try {
     const [list, recs] = await Promise.all([
-      getJson(`/api/characters/${encodeURIComponent(uid)}${q}`),
-      getJson(`/api/recommendations/${encodeURIComponent(uid)}${q}`).catch(() => ({})),
+      getJson(apiUrl('characters', uid, { refresh })),
+      getJson(apiUrl('recommendations', uid, { refresh })).catch(() => ({})),
     ]);
     currentUid = uid;
     syncUid(uid);
-    $('back-link').href = `/?uid=${encodeURIComponent(uid)}#roster`;
+    $('back-link').href = `./?uid=${encodeURIComponent(uid)}#roster`;
     characters = list.sort((a, b) => a.name.localeCompare(b.name));
     recommendations = recs;
     select.replaceChildren(

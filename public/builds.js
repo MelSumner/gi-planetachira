@@ -1,4 +1,4 @@
-import { $, SOURCE_LABELS, h, helperTeamUrl, initPage, syncUid } from './lib.js';
+import { $, SOURCE_LABELS, apiUrl, h, helperTeamUrl, initPage, isStatic, syncUid } from './lib.js';
 
 // Prop type IDs as used by HoYoLAB; must match SUBSTAT_CHOICES on the server.
 const SUBSTAT_CHOICES = [
@@ -39,11 +39,10 @@ async function getJson(url) {
 
 async function load(uid, { refresh = false, quiet = false } = {}) {
   if (!quiet) setStatus(`Checking builds for UID ${uid}…`);
-  const q = refresh ? '?refresh' : '';
   try {
     const [artifacts, rosterList] = await Promise.all([
-      getJson(`/api/artifacts/${encodeURIComponent(uid)}${q}`),
-      getJson(`/api/roster/${encodeURIComponent(uid)}${q}`).catch(() => []),
+      getJson(apiUrl('artifacts', uid, { refresh })),
+      getJson(apiUrl('roster', uid, { refresh })).catch(() => []),
     ]);
     if (!artifacts.builds) throw new Error(artifacts.equipped.error ?? 'Equipped artifacts are unavailable.');
     currentUid = uid;
@@ -111,7 +110,7 @@ function recommendedList(r) {
 }
 
 async function saveSubs(b, subs) {
-  const res = await fetch(`/api/priorities/${b.id}`, {
+  const res = await fetch(`api/priorities/${b.id}`, {
     method: subs ? 'PUT' : 'DELETE',
     headers: { 'Content-Type': 'application/json' },
     body: subs ? JSON.stringify({ subs }) : undefined,
@@ -208,7 +207,7 @@ function render() {
   $('build-rows').replaceChildren(
     ...list.map((b) => {
       const c = roster.get(b.character);
-      const artifactsUrl = `/artifacts?uid=${encodeURIComponent(currentUid)}&loc=${encodeURIComponent(b.character)}`;
+      const artifactsUrl = `artifacts?uid=${encodeURIComponent(currentUid)}&loc=${encodeURIComponent(b.character)}`;
       return h(
         'tr',
         { id: b.id ? `build-${b.id}` : undefined, class: c ? `element-${c.element.toLowerCase()}` : undefined },
@@ -233,10 +232,10 @@ function render() {
         h(
           'td',
           { class: 'num' },
-          (b.priority?.subs.length ?? 0) < MAX_DESIRED ? h('span', { class: 'muted' }, 'Choose 4 substats') : b.pieces ? `${b.perfect} / 5` : '—',
+          (b.priority?.subs.length ?? 0) < MAX_DESIRED ? h('span', { class: 'muted' }, isStatic() ? 'Not checked' : 'Choose 4 substats') : b.pieces ? `${b.perfect} / 5` : '—',
         ),
         h('td', {}, b.issues.length ? h('ul', { class: 'issues' }, b.issues.map((i) => h('li', {}, i))) : h('span', { class: 'muted' }, 'None')),
-        h('td', {}, recommendedList(b.recommended), b.id ? editor(b) : null, helperLink(b, c)),
+        h('td', {}, recommendedList(b.recommended), b.id && !isStatic() ? editor(b) : null, helperLink(b, c)),
       );
     }),
   );

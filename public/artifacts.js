@@ -1,4 +1,4 @@
-import { $, fmtValue, h, initPage, mainStatContent, perfectBadge, stars, syncUid, wantedSubsFor } from './lib.js';
+import { $, apiUrl, fmtValue, h, initPage, isStatic, mainStatContent, perfectBadge, stars, syncUid, wantedSubsFor } from './lib.js';
 
 const SLOT_ORDER = ['Flower', 'Plume', 'Sands', 'Goblet', 'Circlet'];
 const FILTERS = ['f-set', 'f-slot', 'f-main', 'f-sub', 'f-loc', 'f-rarity', 'f-level'];
@@ -20,7 +20,7 @@ function setStatus(message, isError = false) {
 async function load(uid, { refresh = false } = {}) {
   setStatus(`Loading artifacts for UID ${uid}…`);
   try {
-    const res = await fetch(`/api/artifacts/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`);
+    const res = await fetch(apiUrl('artifacts', uid, { refresh }));
     const body = await res.json();
     if (!res.ok) throw new Error(body.error ?? `HTTP ${res.status}`);
     data = body;
@@ -63,12 +63,15 @@ function renderSource() {
   invRadio.checked = source === 'inventory';
   $('inventory-meta').textContent = inv
     ? `(${inv.artifacts.length}, imported ${new Date(inv.importedAt).toLocaleString()}${inv.source ? ` from ${inv.source}` : ''})`
-    : '(not imported yet)';
+    : isStatic()
+      ? '(not included)'
+      : '(not imported yet)';
 
   eqRadio.disabled = !eq.artifacts;
   eqRadio.checked = source === 'equipped';
-  $('equipped-meta').textContent = eq.artifacts ? `(${eq.artifacts.length}, live from HoYoLAB)` : `(unavailable: ${eq.error})`;
+  $('equipped-meta').textContent = eq.artifacts ? `(${eq.artifacts.length}, ${isStatic() ? '' : 'live '}from HoYoLAB)` : `(unavailable: ${eq.error})`;
 
+  if (isStatic()) return;
   $('clear-import').hidden = !inv;
   if (!inv) $('import').open = true;
 }
@@ -222,7 +225,7 @@ $('import-form').addEventListener('submit', async (e) => {
   if (!file) return;
   setStatus(`Importing ${file.name}…`);
   try {
-    const res = await fetch('/api/inventory', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: await file.text() });
+    const res = await fetch('api/inventory', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: await file.text() });
     const body = await res.json();
     if (!res.ok) throw new Error(body.error ?? `HTTP ${res.status}`);
     source = 'inventory';
@@ -236,7 +239,7 @@ $('import-form').addEventListener('submit', async (e) => {
 
 $('clear-import').addEventListener('click', async () => {
   if (!confirm('Remove the imported inventory from this computer?')) return;
-  await fetch('/api/inventory', { method: 'DELETE', headers: { 'Content-Type': 'application/json' } });
+  await fetch('api/inventory', { method: 'DELETE', headers: { 'Content-Type': 'application/json' } });
   source = 'equipped';
   await load(uidInput.value.trim());
 });

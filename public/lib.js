@@ -21,12 +21,58 @@ export const fmtValue = (s) => (s.percent ? `${s.value.toFixed(1)}%` : Math.roun
 export const stars = (n) =>
   h('span', { class: 'stars' }, h('span', { 'aria-hidden': 'true' }, '★'.repeat(n)), h('span', { class: 'visually-hidden' }, `${n}-star`));
 
+let staticMode = false;
+/** True on the static (GitHub Pages) site, which reads a snapshot from data/ instead of the live API. */
+export const isStatic = () => staticMode;
+
+/** URL for an API route; on the static site this is the exported snapshot (one UID only). */
+export function apiUrl(route, uid, { refresh = false } = {}) {
+  if (staticMode) return `data/${route}.json`;
+  return `api/${route}/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`;
+}
+
+const SNAPSHOT_DATE = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: '2-digit',
+  timeZoneName: 'short',
+});
+
+// The static site can't load other UIDs, refresh, or save, so swap the UID form for the snapshot date
+// and remove anything marked data-live-only.
+function enterStaticMode(meta) {
+  staticMode = true;
+  document.documentElement.classList.add('static-site');
+  for (const el of document.querySelectorAll('[data-live-only]')) el.remove();
+  const note = h(
+    'p',
+    { class: 'snapshot-note' },
+    `UID ${meta.uid}. Data current as of `,
+    h('time', { datetime: meta.exportedAt }, SNAPSHOT_DATE.format(new Date(meta.exportedAt))),
+    '.',
+  );
+  const form = $('uid-form');
+  if (form) form.replaceWith(note);
+}
+
 /** Fetch app config and resolve the UID from ?uid= or the server default. Keeps nav links on the same UID. */
 export async function initPage() {
-  const config = await fetch('/api/config').then((r) => r.json());
-  const uid = new URLSearchParams(location.search).get('uid') ?? config.defaultUid;
-  syncUid(uid);
-  return { config, uid };
+  const res = await fetch('api/config').catch(() => null);
+  if (res?.ok && res.headers.get('content-type')?.includes('application/json')) {
+    const config = await res.json();
+    const uid = new URLSearchParams(location.search).get('uid') ?? config.defaultUid;
+    syncUid(uid);
+    return { config, uid };
+  }
+  const meta = await fetch('data/meta.json').then((r) => {
+    if (!r.ok) throw new Error('No server and no exported data.');
+    return r.json();
+  });
+  enterStaticMode(meta);
+  syncUid(meta.uid);
+  return { config: { defaultUid: meta.uid, rosterEnabled: true, static: true }, uid: meta.uid };
 }
 
 export function syncUid(uid) {

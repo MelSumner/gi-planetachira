@@ -1,0 +1,2065 @@
+{
+  "10000002": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000003": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000006": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000007": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000014": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000015": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000016": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000020": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Physical DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000021": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000022": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000023": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000024": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000025": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000026": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000027": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000029": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000030": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000031": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000032": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000033": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000034": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000035": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000036": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000037": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000038": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000039": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000041": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000042": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000043": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000044": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Physical DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000045": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000046": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000047": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000048": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000049": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000050": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000051": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Physical DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000052": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000053": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000054": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000055": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "DEF%"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000056": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000057": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000058": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000059": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000060": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000061": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000062": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000063": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000064": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "DEF%"
+    ],
+    "Circlet": [
+      "DEF%"
+    ],
+    "subs": [
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000065": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000066": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000067": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000068": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000069": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000070": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000071": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000072": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000073": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000074": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000075": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000076": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000077": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000078": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000079": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000080": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000081": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000082": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000083": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Anemo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000084": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000085": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Physical DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000086": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000087": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000088": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "ATK%",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000089": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000090": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000091": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000092": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000093": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000094": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000095": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000096": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000097": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000098": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000099": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000100": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "Geo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000101": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Dendro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000102": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000103": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "DEF%"
+    ],
+    "Circlet": [
+      "DEF%"
+    ],
+    "subs": [
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000104": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000105": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000106": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000107": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000108": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000109": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000110": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000111": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Electro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000112": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000113": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000114": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000115": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000116": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000119": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000120": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000121": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Hydro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT Rate",
+      "CRIT DMG"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000122": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000123": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Pyro DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000124": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "Healing Bonus"
+    ],
+    "subs": [
+      "ATK%",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000125": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000126": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "DEF%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000127": {
+    "Sands": [
+      "Elemental Mastery"
+    ],
+    "Goblet": [
+      "Elemental Mastery"
+    ],
+    "Circlet": [
+      "Elemental Mastery"
+    ],
+    "subs": [
+      "Elemental Mastery"
+    ],
+    "source": "hoyolab"
+  },
+  "10000128": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000129": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "Cryo DMG Bonus"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000130": {
+    "Sands": [
+      "DEF%"
+    ],
+    "Goblet": [
+      "DEF%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "DEF%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000131": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000132": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000133": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000140": {
+    "Sands": [
+      "HP%"
+    ],
+    "Goblet": [
+      "HP%"
+    ],
+    "Circlet": [
+      "HP%"
+    ],
+    "subs": [
+      "HP%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000143": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  },
+  "10000148": {
+    "Sands": [
+      "Energy Recharge"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "ATK%"
+    ],
+    "subs": [
+      "ATK%",
+      "Energy Recharge"
+    ],
+    "source": "hoyolab"
+  },
+  "10000150": {
+    "Sands": [
+      "ATK%"
+    ],
+    "Goblet": [
+      "ATK%"
+    ],
+    "Circlet": [
+      "CRIT DMG",
+      "CRIT Rate"
+    ],
+    "subs": [
+      "CRIT Rate",
+      "CRIT DMG",
+      "ATK%"
+    ],
+    "source": "hoyolab"
+  }
+}

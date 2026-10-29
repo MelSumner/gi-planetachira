@@ -1,0 +1,3110 @@
+{
+  "uid": "635783945",
+  "region": "NA",
+  "nickname": "Achira",
+  "adventureRank": 60,
+  "worldLevel": 9,
+  "signature": "Bequeathed in twain",
+  "achievements": 1535,
+  "abyss": "10-3 (18★)",
+  "characters": [
+    {
+      "id": 10000140,
+      "name": "Vodyanitsa",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Vodyanitsa.png",
+      "element": "Hydro",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 3,
+      "friendship": 4,
+      "talents": [
+        {
+          "base": 2,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 4
+        },
+        {
+          "base": 7,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 66067.6171875,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 998.2953491210938,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 642.88330078125,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 139.8699951171875,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 15.50000011920929,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 68.65000128746033,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 166.7099952697754,
+          "percent": true
+        },
+        {
+          "name": "Healing Bonus",
+          "value": 3.999999910593033,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Hymn of the Maelstrom",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Bludnye.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 542,
+            "percent": false
+          },
+          {
+            "name": "HP%",
+            "value": 66.2,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15017_4.png",
+          "set": "Tenacity of the Millelith",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "HP%",
+              "value": 11.7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 11,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 32,
+              "percent": false
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 37,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15017_2.png",
+          "set": "Tenacity of the Millelith",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 18.7,
+              "percent": true
+            },
+            {
+              "name": "HP",
+              "value": 239,
+              "percent": false
+            },
+            {
+              "name": "HP%",
+              "value": 11.7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 10.4,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15017_5.png",
+          "set": "Tenacity of the Millelith",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "HP",
+              "value": 538,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7.4,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.8,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 14,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15047_1.png",
+          "set": "Scarlet Proof",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 16.2,
+              "percent": true
+            },
+            {
+              "name": "HP",
+              "value": 508,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.1,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 44,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15017_3.png",
+          "set": "Tenacity of the Millelith",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF%",
+              "value": 6.6,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 12.3,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 58,
+              "percent": false
+            },
+            {
+              "name": "DEF",
+              "value": 58,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 39.7
+    },
+    {
+      "id": 10000150,
+      "name": "Odette",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Odette.png",
+      "element": "Cryo",
+      "rarity": 5,
+      "level": 95,
+      "ascension": 6,
+      "constellation": 0,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 2,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 0
+        },
+        {
+          "base": 8,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 26521.56640625,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2188.2890625,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 897.495849609375,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 0,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 62.43119835853577,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 222.0900058746338,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 146.61999940872192,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Whitelake Frostfeather",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Swanlake.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 2,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 674,
+            "percent": false
+          },
+          {
+            "name": "CRIT Rate",
+            "value": 22.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15048_4.png",
+          "set": "Heart of the Furnace",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 5.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.5,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 33,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 26.4,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15048_2.png",
+          "set": "Heart of the Furnace",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 14.2,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 15.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 5.4,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15048_5.png",
+          "set": "Heart of the Furnace",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 6.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 26.4,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 23,
+              "percent": false
+            },
+            {
+              "name": "DEF%",
+              "value": 7.3,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15048_1.png",
+          "set": "Heart of the Furnace",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK",
+              "value": 53,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 13.2,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 6.5,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15003_3.png",
+          "set": "Wanderer's Troupe",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 8.6,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 14,
+              "percent": false
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 20.7,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 5.3,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 142.2
+    },
+    {
+      "id": 10000114,
+      "name": "Skirk",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_SkirkNew.png",
+      "element": "Cryo",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 4,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 5,
+          "bonus": 0
+        },
+        {
+          "base": 9,
+          "bonus": 1
+        },
+        {
+          "base": 8,
+          "bonus": 3
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 18318.921875,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2335.96044921875,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 971.7278442382812,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 109.55999755859375,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 88.09120059013367,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 192.51999855041504,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 100,
+          "percent": true
+        },
+        {
+          "name": "Cryo DMG Bonus",
+          "value": 61.59999966621399,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Azurelight",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Sword_OuterSword.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 674,
+            "percent": false
+          },
+          {
+            "name": "CRIT Rate",
+            "value": 22.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15040_4.png",
+          "set": "Finale of the Deep Galleries",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "DEF%",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.1,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 35,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15040_2.png",
+          "set": "Finale of the Deep Galleries",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 21,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 19,
+              "percent": false
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 21,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15040_5.png",
+          "set": "Finale of the Deep Galleries",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 10.1,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 13.2,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 65,
+              "percent": false
+            },
+            {
+              "name": "HP",
+              "value": 239,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15003_1.png",
+          "set": "Wanderer's Troupe",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "Cryo DMG Bonus",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF",
+              "value": 39,
+              "percent": false
+            },
+            {
+              "name": "ATK%",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 17.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15040_3.png",
+          "set": "Finale of the Deep Galleries",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT Rate",
+            "value": 31.1,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 17.9,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 23,
+              "percent": false
+            },
+            {
+              "name": "ATK%",
+              "value": 11.1,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 35,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 164
+    },
+    {
+      "id": 10000143,
+      "name": "Vesna",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Vesna.png",
+      "element": "Anemo",
+      "rarity": 5,
+      "level": 90,
+      "ascension": 6,
+      "constellation": 1,
+      "friendship": 3,
+      "talents": [
+        {
+          "base": 1,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 0
+        },
+        {
+          "base": 8,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 19356.6171875,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2804.92041015625,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 730.1266479492188,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 174.83999633789062,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 57.63999819755554,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 195.1524019241333,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 111.01000308990479,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Beyond the Chrysalis",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Sword_Samosvist.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 674,
+            "percent": false
+          },
+          {
+            "name": "CRIT DMG",
+            "value": 44.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15007_4.png",
+          "set": "Noblesse Oblige",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 61,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 21,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.5,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 4.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15047_2.png",
+          "set": "Scarlet Proof",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 5.4,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 9.9,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 13.2,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15047_5.png",
+          "set": "Scarlet Proof",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK",
+              "value": 49,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 11,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 5.4,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15007_1.png",
+          "set": "Noblesse Oblige",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 42,
+              "percent": false
+            },
+            {
+              "name": "ATK",
+              "value": 64,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15007_3.png",
+          "set": "Noblesse Oblige",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK%",
+              "value": 14.6,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 18,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.1,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 56,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 105.6
+    },
+    {
+      "id": 10000131,
+      "name": "Nicole",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Nicole.png",
+      "element": "Pyro",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 2,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 6,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 0
+        },
+        {
+          "base": 9,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 16436.728515625,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 4108.95703125,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 737.226806640625,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 39.62999725341797,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 12.000000476837158,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 64.7599995136261,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 199.6500015258789,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Angelos' Heptades",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_FairyGarden.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 741,
+            "percent": false
+          },
+          {
+            "name": "ATK%",
+            "value": 16.5,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15045_4.png",
+          "set": "Celestial Gift",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 13.6,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "ATK",
+              "value": 37,
+              "percent": false
+            },
+            {
+              "name": "ATK%",
+              "value": 8.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15045_2.png",
+          "set": "Celestial Gift",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "ATK%",
+              "value": 8.7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.8,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 62,
+              "percent": false
+            },
+            {
+              "name": "DEF%",
+              "value": 5.8,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15045_5.png",
+          "set": "Celestial Gift",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 16.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 21,
+              "percent": false
+            },
+            {
+              "name": "ATK",
+              "value": 45,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15046_1.png",
+          "set": "Disenchantment in Deep Shadow",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 14.8,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 35,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15045_3.png",
+          "set": "Celestial Gift",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK",
+              "value": 33,
+              "percent": false
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 23,
+              "percent": false
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.8,
+              "percent": true
+            },
+            {
+              "name": "HP",
+              "value": 508,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 28.8
+    },
+    {
+      "id": 10000125,
+      "name": "Columbina",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
+      "element": "Hydro",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 4,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 6,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 3
+        },
+        {
+          "base": 9,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 40878.12109375,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 999.2058715820312,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 593.2000732421875,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 114.97000122070312,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 54.919999837875366,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 228.37481498718262,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 181.60001039505005,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Nocturne's Curtain Call",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Catalyst_Brisingamen.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 542,
+            "percent": false
+          },
+          {
+            "name": "CRIT DMG",
+            "value": 88.2,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15043_4.png",
+          "set": "Aubade of Morningstar and Moon",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "ATK",
+              "value": 14,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 14.8,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 11.7,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.9,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15043_2.png",
+          "set": "Aubade of Morningstar and Moon",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.8,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 9.3,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15043_5.png",
+          "set": "Aubade of Morningstar and Moon",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "DEF",
+              "value": 42,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.5,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 22.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15043_1.png",
+          "set": "Aubade of Morningstar and Moon",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 35,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 6.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.5,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 20.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15038_3.png",
+          "set": "Obsidian Codex",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 10.4,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 13.4,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "HP",
+              "value": 538,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 89.4
+    },
+    {
+      "id": 10000052,
+      "name": "Raiden Shogun",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Shougun.png",
+      "element": "Electro",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 6,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 10,
+          "bonus": 0
+        },
+        {
+          "base": 10,
+          "bonus": 3
+        },
+        {
+          "base": 10,
+          "bonus": 3
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 19868.11328125,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2853.4348753051718,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 913.212158203125,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 39.62999725341797,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 65.6499981880188,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 106.73000812530518,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 313.9779806137085,
+          "percent": true
+        },
+        {
+          "name": "Electro DMG Bonus",
+          "value": 132.19119131565097,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Engulfing Lightning",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Narukami.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 5,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 608,
+            "percent": false
+          },
+          {
+            "name": "Energy Recharge",
+            "value": 55.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_4.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 11.7,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 5.3,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 8.9,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 11.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_2.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 18.1,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 4.7,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 21,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 3.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15042_5.png",
+          "set": "Silken Moon's Serenade",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "Energy Recharge",
+            "value": 51.8,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF%",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 10.9,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 9.9,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 11.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_1.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "Electro DMG Bonus",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 13.2,
+              "percent": true
+            },
+            {
+              "name": "HP",
+              "value": 538,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 16.2,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_3.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT Rate",
+            "value": 31.1,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "ATK%",
+              "value": 14.6,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 19,
+              "percent": false
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 9.1,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 40,
+              "percent": false
+            }
+          ]
+        }
+      ],
+      "critValue": 115.8
+    },
+    {
+      "id": 10000076,
+      "name": "Faruzan",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Faruzan.png",
+      "element": "Anemo",
+      "rarity": 4,
+      "level": 90,
+      "ascension": 6,
+      "constellation": 6,
+      "friendship": 5,
+      "talents": [
+        {
+          "base": 6,
+          "bonus": 0
+        },
+        {
+          "base": 2,
+          "bonus": 3
+        },
+        {
+          "base": 4,
+          "bonus": 3
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 14907.8525390625,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 1639.912353515625,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 644.1198120117188,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 44.290000915527344,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 43.140000104904175,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 95.8400011062622,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 218.61681938171387,
+          "percent": true
+        },
+        {
+          "name": "Anemo DMG Bonus",
+          "value": 46.59999907016754,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Fading Twilight",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Bow_Fallensun.png",
+        "rarity": 4,
+        "level": 90,
+        "refinement": 3,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 565,
+            "percent": false
+          },
+          {
+            "name": "Energy Recharge",
+            "value": 30.6,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_4.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "ATK%",
+              "value": 5.3,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 15.5,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 54,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7.4,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_2.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 8.9,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 9.7,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 9.3,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 5.8,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15020_5.png",
+          "set": "Emblem of Severed Fate",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "Energy Recharge",
+            "value": 51.8,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 44,
+              "percent": false
+            },
+            {
+              "name": "DEF",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 15.2,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15045_1.png",
+          "set": "Celestial Gift",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "Anemo DMG Bonus",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 4.1,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 22.5,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 33,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15026_3.png",
+          "set": "Gilded Dreams",
+          "rarity": 5,
+          "level": 0,
+          "main": {
+            "name": "CRIT Rate",
+            "value": 4.7,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 7.8,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 6.5,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 5.3,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 112.6
+    },
+    {
+      "id": 10000128,
+      "name": "Varka",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Varka.png",
+      "element": "Anemo",
+      "rarity": 5,
+      "level": 100,
+      "ascension": 6,
+      "constellation": 1,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 1,
+          "bonus": 0
+        },
+        {
+          "base": 9,
+          "bonus": 0
+        },
+        {
+          "base": 9,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 21603.88671875,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2794.4501953125,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 912.1804809570312,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 0,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 85.90680360794067,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 218.1999921798706,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 100,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Gest of the Mighty Wolf",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_EnsisAquilonis.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 608,
+            "percent": false
+          },
+          {
+            "name": "CRIT Rate",
+            "value": 33.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_4.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "DEF",
+              "value": 19,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 21.8,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.1,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 4.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_2.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "DEF",
+              "value": 19,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 18.7,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 11.7,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_5.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 9.3,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 14,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 14,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_1.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF",
+              "value": 23,
+              "percent": false
+            },
+            {
+              "name": "HP",
+              "value": 837,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 20.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_3.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "HP",
+              "value": 508,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 5.3,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 9.9,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 163.3
+    },
+    {
+      "id": 10000116,
+      "name": "Ineffa",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Ineffa.png",
+      "element": "Electro",
+      "rarity": 5,
+      "level": 95,
+      "ascension": 6,
+      "constellation": 2,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 3,
+          "bonus": 0
+        },
+        {
+          "base": 8,
+          "bonus": 0
+        },
+        {
+          "base": 5,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 20505.49609375,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2377.9970703125,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 1045.682861328125,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 109.56999969482422,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 49.86000061035156,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 259.9436044692993,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 124.53000545501709,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Fractured Halo",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Perdix.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 608,
+            "percent": false
+          },
+          {
+            "name": "CRIT DMG",
+            "value": 66.2,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15042_4.png",
+          "set": "Silken Moon's Serenade",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 10.5,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 35,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 20.2,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15042_2.png",
+          "set": "Silken Moon's Serenade",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "HP%",
+              "value": 9.9,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 4.5,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 23.3,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.2,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15042_5.png",
+          "set": "Silken Moon's Serenade",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 19.4,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 5.4,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 18,
+              "percent": false
+            },
+            {
+              "name": "DEF",
+              "value": 32,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15044_1.png",
+          "set": "A Day Carved From Rising Winds",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF%",
+              "value": 13.1,
+              "percent": true
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 7.4,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 18.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15042_3.png",
+          "set": "Silken Moon's Serenade",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 58,
+              "percent": false
+            },
+            {
+              "name": "DEF%",
+              "value": 5.1,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 18,
+              "percent": false
+            },
+            {
+              "name": "ATK%",
+              "value": 15.2,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 132.8
+    },
+    {
+      "id": 10000063,
+      "name": "Shenhe",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_Shenhe.png",
+      "element": "Cryo",
+      "rarity": 5,
+      "level": 95,
+      "ascension": 6,
+      "constellation": 2,
+      "friendship": 9,
+      "talents": [
+        {
+          "base": 1,
+          "bonus": 0
+        },
+        {
+          "base": 8,
+          "bonus": 0
+        },
+        {
+          "base": 3,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 21056.8203125,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 3418.37744140625,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 975.2337646484375,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 37.29999923706055,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 17.830000817775726,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 99.71999526023865,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 151.17000341415405,
+          "percent": true
+        },
+        {
+          "name": "Pyro DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Electro DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Hydro DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Dendro DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Anemo DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Geo DMG Bonus",
+          "value": 12,
+          "percent": true
+        },
+        {
+          "name": "Cryo DMG Bonus",
+          "value": 12,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "Calamity Queller",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Pole_Santika.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 741,
+            "percent": false
+          },
+          {
+            "name": "ATK%",
+            "value": 16.5,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15019_4.png",
+          "set": "Shimenawa's Reminiscence",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 10.4,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 6.2,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 15.5,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 10.5,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15019_2.png",
+          "set": "Shimenawa's Reminiscence",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 6.6,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 14,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 14.6,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 6.5,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15037_5.png",
+          "set": "Scroll of the Hero of Cinder City",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Energy Recharge",
+              "value": 18.1,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 35,
+              "percent": false
+            },
+            {
+              "name": "Elemental Mastery",
+              "value": 37,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 7.8,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15001_1.png",
+          "set": "Gladiator's Finale",
+          "rarity": 5,
+          "level": 8,
+          "main": {
+            "name": "ATK%",
+            "value": 22.8,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 5.4,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 5.2,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 37,
+              "percent": false
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15001_3.png",
+          "set": "Gladiator's Finale",
+          "rarity": 5,
+          "level": 8,
+          "main": {
+            "name": "ATK%",
+            "value": 22.8,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 7,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 44,
+              "percent": false
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 11,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 4.7,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 75.3
+    },
+    {
+      "id": 10000133,
+      "name": "Sandrone",
+      "icon": "https://enka.network/ui/UI_AvatarIcon_MarionetteNew.png",
+      "element": "Cryo",
+      "rarity": 5,
+      "level": 95,
+      "ascension": 6,
+      "constellation": 1,
+      "friendship": 10,
+      "talents": [
+        {
+          "base": 8,
+          "bonus": 0
+        },
+        {
+          "base": 6,
+          "bonus": 0
+        },
+        {
+          "base": 7,
+          "bonus": 0
+        }
+      ],
+      "stats": [
+        {
+          "name": "Max HP",
+          "value": 21987.861328125,
+          "percent": false
+        },
+        {
+          "name": "ATK",
+          "value": 2756.701171875,
+          "percent": false
+        },
+        {
+          "name": "DEF",
+          "value": 834.6742553710938,
+          "percent": false
+        },
+        {
+          "name": "Elemental Mastery",
+          "value": 41.959999084472656,
+          "percent": false
+        },
+        {
+          "name": "CRIT Rate",
+          "value": 76.30000114440918,
+          "percent": true
+        },
+        {
+          "name": "CRIT DMG",
+          "value": 207.59239196777344,
+          "percent": true
+        },
+        {
+          "name": "Energy Recharge",
+          "value": 105.83000183105469,
+          "percent": true
+        }
+      ],
+      "weapon": {
+        "name": "A Teaspoon of Transcendence",
+        "icon": "https://enka.network/ui/UI_EquipIcon_Claymore_CrystallineSword.png",
+        "rarity": 5,
+        "level": 90,
+        "refinement": 1,
+        "stats": [
+          {
+            "name": "Base ATK",
+            "value": 674,
+            "percent": false
+          },
+          {
+            "name": "CRIT DMG",
+            "value": 44.1,
+            "percent": true
+          }
+        ]
+      },
+      "artifacts": [
+        {
+          "slot": "Flower",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15043_4.png",
+          "set": "Aubade of Morningstar and Moon",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "HP",
+            "value": 4780,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT DMG",
+              "value": 13.2,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 8.7,
+              "percent": true
+            },
+            {
+              "name": "Energy Recharge",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 10.1,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Plume",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15046_2.png",
+          "set": "Disenchantment in Deep Shadow",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK",
+            "value": 311,
+            "percent": false
+          },
+          "subs": [
+            {
+              "name": "CRIT Rate",
+              "value": 13.6,
+              "percent": true
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 12.4,
+              "percent": true
+            },
+            {
+              "name": "ATK%",
+              "value": 5.8,
+              "percent": true
+            },
+            {
+              "name": "HP%",
+              "value": 9.9,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Sands",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15046_5.png",
+          "set": "Disenchantment in Deep Shadow",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 23,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 9.3,
+              "percent": true
+            },
+            {
+              "name": "DEF",
+              "value": 39,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 11.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Goblet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15046_1.png",
+          "set": "Disenchantment in Deep Shadow",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "ATK%",
+            "value": 46.6,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "DEF",
+              "value": 16,
+              "percent": false
+            },
+            {
+              "name": "CRIT DMG",
+              "value": 14,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 31,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 9.7,
+              "percent": true
+            }
+          ]
+        },
+        {
+          "slot": "Circlet",
+          "icon": "https://enka.network/ui/UI_RelicIcon_15046_3.png",
+          "set": "Disenchantment in Deep Shadow",
+          "rarity": 5,
+          "level": 20,
+          "main": {
+            "name": "CRIT DMG",
+            "value": 62.2,
+            "percent": true
+          },
+          "subs": [
+            {
+              "name": "Elemental Mastery",
+              "value": 19,
+              "percent": false
+            },
+            {
+              "name": "CRIT Rate",
+              "value": 9.3,
+              "percent": true
+            },
+            {
+              "name": "ATK",
+              "value": 33,
+              "percent": false
+            },
+            {
+              "name": "HP%",
+              "value": 15.7,
+              "percent": true
+            }
+          ]
+        }
+      ],
+      "critValue": 155.3
+    }
+  ]
+}

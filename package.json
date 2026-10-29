@@ -13,7 +13,8 @@
     "dev": "tsx watch src/server.ts",
     "typecheck": "tsc --noEmit",
     "build": "tsc",
-    "test": "node --import tsx --test test/*.test.ts"
+    "test": "node --import tsx --test test/*.test.ts",
+    "export": "tsx src/export.ts"
   },
   "license": "MIT",
   "devDependencies": {

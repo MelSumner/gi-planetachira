@@ -108,6 +108,10 @@ h4 { font-size: 1rem; margin: 0 0 0.75rem; }
   align-items: center;
 }
 
+.snapshot-note {
+  margin: 0;
+}
+
 input,
 button {
   font: inherit;
