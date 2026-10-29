@@ -27,6 +27,10 @@ const STATIC: Record<string, [file: string, type: string]> = {
   '/artifacts.js': ['artifacts.js', 'text/javascript; charset=utf-8'],
   '/lib.js': ['lib.js', 'text/javascript; charset=utf-8'],
   '/styles.css': ['styles.css', 'text/css; charset=utf-8'],
+  '/favicon.svg': ['favicon.svg', 'image/svg+xml'],
+  '/favicon-32.png': ['favicon-32.png', 'image/png'],
+  '/apple-touch-icon.png': ['apple-touch-icon.png', 'image/png'],
+  '/og-image.png': ['og-image.png', 'image/png'],
 };
 
 function sendJson(res: ServerResponse, status: number, body: unknown) {

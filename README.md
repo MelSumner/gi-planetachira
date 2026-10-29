@@ -84,6 +84,14 @@ To publish:
 
 The site is published at `https://melsumner.github.io/gi-planetachira/`. Everything in `data/` is public there, including your UID, characters and artifacts. Cookies and `.data/` are never included.
 
+Each page has a description, Open Graph tags and a favicon. The share image `public/og-image.png` and the PNG icons are rendered from `design/` with headless Chrome (`C` is the Chrome binary):
+
+```sh
+"$C" --headless=new --hide-scrollbars --window-size=1200,630 --screenshot=public/og-image.png "file://$PWD/design/og-image.html"
+"$C" --headless=new --hide-scrollbars --default-background-color=00000000 --window-size=32,32 --screenshot=public/favicon-32.png "file://$PWD/design/icon.html?size=32"
+"$C" --headless=new --hide-scrollbars --window-size=180,180 --screenshot=public/apple-touch-icon.png "file://$PWD/design/icon.html?size=180&square"
+```
+
 ### CLI
 
 ```sh
