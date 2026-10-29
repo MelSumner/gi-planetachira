@@ -155,9 +155,60 @@ export interface RawRelic {
   sub_property_list: RawRelicProperty[];
 }
 
+/** Prop type IDs HoYoLAB recommends per slot. Players can override them on HoYoLAB (custom_properties). */
+export interface RawRecommendedProperties {
+  sand_main_property_list?: number[];
+  goblet_main_property_list?: number[];
+  circlet_main_property_list?: number[];
+  sub_property_list?: number[];
+}
+
+export interface RawDetailProperty {
+  property_type: number;
+  final: string;
+}
+
+/** A character stat, named with the response's property_map at fetch time. */
+export interface DetailProperty {
+  type: number;
+  name: string;
+  final: string;
+}
+
 export interface RawDetailCharacter {
-  base: { id: number; name: string };
+  base: {
+    id: number;
+    name: string;
+    element?: string;
+    rarity?: number;
+    level?: number;
+    actived_constellation_num?: number;
+    fetter?: number;
+    icon?: string;
+  };
+  weapon?: {
+    name: string;
+    icon?: string;
+    rarity: number;
+    level: number;
+    affix_level: number;
+    main_property?: RawDetailProperty | null;
+    sub_property?: RawDetailProperty | null;
+  } | null;
+  /** skill_type 1 = talents (Normal Attack, Skill, [sprint], Burst), 2/3 = passives. */
+  skills?: { skill_type: number; name: string; level: number }[];
+  properties?: DetailProperty[];
   relics: RawRelic[];
+  recommend_relic_property?: {
+    recommend_properties?: RawRecommendedProperties | null;
+    custom_properties?: RawRecommendedProperties | null;
+  } | null;
+}
+
+interface RawFullDetailCharacter extends RawDetailCharacter {
+  base_properties?: RawDetailProperty[];
+  extra_properties?: RawDetailProperty[];
+  element_properties?: RawDetailProperty[];
 }
 
 // Full details (incl. equipped artifacts) for every owned character; one request handles all IDs.
@@ -165,14 +216,51 @@ export async function fetchCharacterDetails(
   uid: string,
   { useCache = true, lang = 'en-us' } = {},
 ): Promise<RawDetailCharacter[]> {
-  const cacheKey = `details-${uid}-${lang}.json`;
+  const cacheKey = `details-v3-${uid}-${lang}.json`;
   if (useCache) {
     const cached = await readCache<RawDetailCharacter[]>(cacheKey);
     if (cached) return cached;
   }
   const ids = (await fetchRoster(uid, { useCache, lang })).map((c) => c.id);
-  const data = await recordRequest<{ list: RawDetailCharacter[] }>('character/detail', uid, { character_ids: ids }, lang);
-  const list = data.list.map((c) => ({ base: { id: c.base.id, name: c.base.name }, relics: c.relics ?? [] }));
+  const data = await recordRequest<{ list: RawFullDetailCharacter[]; property_map?: Record<string, { name: string }> }>(
+    'character/detail',
+    uid,
+    { character_ids: ids },
+    lang,
+  );
+  const propName = (t: number) => data.property_map?.[t]?.name ?? `Stat ${t}`;
+  // Keep only what the app uses; the full response is over 2 MB.
+  const list: RawDetailCharacter[] = data.list.map((c) => ({
+    base: {
+      id: c.base.id,
+      name: c.base.name,
+      element: c.base.element,
+      rarity: c.base.rarity,
+      level: c.base.level,
+      actived_constellation_num: c.base.actived_constellation_num,
+      fetter: c.base.fetter,
+      icon: c.base.icon,
+    },
+    weapon: c.weapon
+      ? {
+          name: c.weapon.name,
+          icon: c.weapon.icon,
+          rarity: c.weapon.rarity,
+          level: c.weapon.level,
+          affix_level: c.weapon.affix_level,
+          main_property: c.weapon.main_property ?? null,
+          sub_property: c.weapon.sub_property ?? null,
+        }
+      : null,
+    skills: (c.skills ?? []).map((k) => ({ skill_type: k.skill_type, name: k.name, level: k.level })),
+    properties: [...(c.base_properties ?? []), ...(c.extra_properties ?? []), ...(c.element_properties ?? [])].map((p) => ({
+      type: p.property_type,
+      name: propName(p.property_type),
+      final: p.final,
+    })),
+    relics: c.relics ?? [],
+    recommend_relic_property: c.recommend_relic_property ?? null,
+  }));
   await writeCache(cacheKey, list, ROSTER_TTL);
   return list;
 }

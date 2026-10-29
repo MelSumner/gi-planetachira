@@ -16,6 +16,7 @@
         <ul>
           <li><a href="/">Profile</a></li>
           <li><a href="/artifacts" aria-current="page">Artifacts</a></li>
+          <li><a href="/builds">Build check</a></li>
         </ul>
       </nav>
       <form id="uid-form" class="uid-form">
@@ -98,6 +99,7 @@
               <th scope="col" data-sort="main"><button type="button">Main stat</button></th>
               <th scope="col">Substats</th>
               <th scope="col" data-sort="cv"><button type="button">Crit Value</button></th>
+              <th scope="col" data-sort="fit"><button type="button">Fit</button></th>
               <th scope="col" data-sort="location"><button type="button">Equipped on</button></th>
             </tr>
           </thead>
@@ -107,7 +109,10 @@
     </main>
 
     <footer class="site-footer">
-      <p>Equipped artifacts come from HoYoLAB. The full inventory comes from your imported GOOD file. Crit Value = 2 × CRIT Rate + CRIT DMG from substats.</p>
+      <p>Equipped artifacts come from HoYoLAB. The full inventory comes from your imported GOOD file. Crit Value = 2 × CRIT Rate + CRIT DMG from substats.
+        Fit = substat rolls in the wearer's recommended stats, compared with a strong piece (see <a href="/builds">Build check</a>).
+        Perfect = the right main stat plus every desired substat the piece can have, once 4 desired substats are chosen.
+        Roll counts for imported artifacts are estimated from their values.</p>
     </footer>
   </body>
 </html>

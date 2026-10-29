@@ -1,4 +1,4 @@
-import { $, fmtValue, h, initPage, stars, syncUid } from './lib.js';
+import { $, fmtValue, h, initPage, mainStatContent, perfectBadge, stars, syncUid, wantedSubsFor } from './lib.js';
 
 const SLOT_ORDER = ['Flower', 'Plume', 'Sands', 'Goblet', 'Circlet'];
 const FILTERS = ['f-set', 'f-slot', 'f-main', 'f-sub', 'f-loc', 'f-rarity', 'f-level'];
@@ -9,6 +9,8 @@ const uidInput = $('uid');
 let data = null; // { equipped: { artifacts } | { error }, inventory: { artifacts, importedAt, source } | null }
 let source = 'equipped';
 let sort = { key: 'cv', dir: 'desc' };
+// Set by links from the Build check page; applied once after the first load.
+let pendingLoc = new URLSearchParams(location.search).get('loc');
 
 function setStatus(message, isError = false) {
   status.textContent = message;
@@ -29,6 +31,13 @@ async function load(uid, { refresh = false } = {}) {
     if (!(source === 'inventory' ? hasInventory : hasEquipped)) source = hasInventory ? 'inventory' : 'equipped';
     renderSource();
     populateFilters();
+    if (pendingLoc) {
+      if (source !== 'equipped' && data.equipped.artifacts) source = 'equipped';
+      renderSource();
+      populateFilters();
+      if ([...$('f-loc').options].some((o) => o.value === pendingLoc)) $('f-loc').value = pendingLoc;
+      pendingLoc = null;
+    }
     render();
 
     const parts = [];
@@ -105,6 +114,8 @@ const SORTERS = {
   main: (a, b) => a.main.name.localeCompare(b.main.name),
   cv: (a, b) => a.critValue - b.critValue,
   location: (a, b) => (a.location ?? '\uffff').localeCompare(b.location ?? '\uffff'),
+  // Unassessed artifacts sort as worst.
+  fit: (a, b) => (a.fit?.perfect ? 2 : (a.fit?.score ?? -1)) - (b.fit?.perfect ? 2 : (b.fit?.score ?? -1)),
 };
 
 function sorted(list) {
@@ -114,12 +125,32 @@ function sorted(list) {
   return [...list].sort((a, b) => dir * cmp(a, b) || b.critValue - a.critValue || SORTERS.set(a, b) || SORTERS.slot(a, b));
 }
 
-function subLine(s) {
+// Desired substats (by name) per character, from the build check.
+const desiredByCharacter = () => new Map((data?.builds ?? []).map((b) => [b.character, new Set(b.recommended?.subs ?? [])]));
+const NONE = new Set();
+
+function subLine(s, wanted) {
+  const isWanted = wanted.has(s.name);
+  const classes = [s.type === 20 || s.type === 22 ? 'crit' : '', isWanted ? 'recommended' : ''].filter(Boolean).join(' ');
   return h(
     'li',
-    { class: s.type === 20 || s.type === 22 ? 'crit' : undefined },
+    { class: classes || undefined },
+    isWanted ? h('span', { class: 'rec-mark', 'aria-hidden': 'true' }, '✓ ') : null,
     `${s.name} ${fmtValue(s)}`,
+    isWanted ? h('span', { class: 'visually-hidden' }, ' (recommended)') : null,
     s.rolls > 1 ? [h('span', { class: 'rolls', 'aria-hidden': 'true' }, ` ×${s.rolls}`), h('span', { class: 'visually-hidden' }, `, rolled ${s.rolls} times`)] : null,
+  );
+}
+
+function fitCell(fit) {
+  if (!fit) return h('td', {}, h('span', { class: 'muted', 'aria-hidden': 'true' }, '—'), h('span', { class: 'visually-hidden' }, 'Not assessed'));
+  const level = fit.score === null ? '' : fit.score >= 0.6 ? 'great' : fit.score >= 0.45 ? 'good' : fit.score >= 0.3 ? 'needs-work' : 'poor';
+  return h(
+    'td',
+    { class: 'fit' },
+    fit.targetRolls ? h('span', { class: `grade grade-${level}` }, `${fit.usefulRolls} / ${fit.targetRolls}`) : null,
+    fit.targetRolls ? h('span', { class: 'visually-hidden' }, ' useful rolls') : null,
+    fit.perfect ? perfectBadge() : fit.desiredMax ? h('span', { class: 'muted fit-desired' }, `${fit.desiredHit} of ${fit.desiredMax} desired substats`) : null,
   );
 }
 
@@ -134,6 +165,7 @@ function render() {
     else th.removeAttribute('aria-sort');
   }
 
+  const desired = desiredByCharacter();
   $('artifact-rows').replaceChildren(
     ...list.map((a) =>
       h(
@@ -152,9 +184,10 @@ function render() {
         h('td', {}, a.slot),
         h('td', {}, stars(a.rarity)),
         h('td', {}, `+${a.level}`),
-        h('td', {}, `${a.main.name} ${fmtValue(a.main)}`),
-        h('td', {}, h('ul', { class: 'subs' }, a.subs.map(subLine))),
+        h('td', {}, mainStatContent(a, a.fit?.mainOk ?? null)),
+        h('td', {}, h('ul', { class: 'subs' }, a.subs.map((sub) => subLine(sub, wantedSubsFor(a, desired.get(a.location) ?? NONE))))),
         h('td', { class: 'num' }, a.critValue.toFixed(1)),
+        fitCell(a.fit),
         h('td', {}, a.location ?? h('span', { class: 'muted' }, 'Unequipped')),
       ),
     ),
@@ -162,7 +195,7 @@ function render() {
 }
 
 // Sorting via header buttons; first click on a column sorts descending for numbers, ascending for text.
-const NUMERIC = new Set(['rarity', 'level', 'cv']);
+const NUMERIC = new Set(['rarity', 'level', 'cv', 'fit']);
 for (const th of document.querySelectorAll('#artifact-table th[data-sort]')) {
   th.querySelector('button').addEventListener('click', () => {
     const key = th.dataset.sort;

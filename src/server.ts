@@ -1,13 +1,26 @@
 import { createServer, type IncomingMessage, type ServerResponse } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import { fromGood, fromHoyolab } from './artifacts.js';
+import {
+  applyOverride,
+  assessBuild,
+  fromGood,
+  fromHoyolab,
+  isValidOverride,
+  priorityFromHoyolab,
+  recommendedNames,
+  withFit,
+  type RecommendedNames,
+  type StatPriority,
+} from './artifacts.js';
 import { loadAssets, loadRelicLevels, setNames } from './assets.js';
 import { toProfile } from './build.js';
+import { characterFromHoyolab } from './characters.js';
 import { DEFAULT_UID } from './config.js';
 import { EnkaError, fetchProfile, isValidUid } from './enka.js';
 import { HoyolabError, fetchCharacterDetails, fetchRoster, getCookie } from './hoyolab.js';
 import { clearInventory, loadInventory, saveInventory } from './inventory.js';
+import { loadOverrides, setOverride } from './priorities.js';
 
 const PORT = Number(process.env.PORT ?? 3000);
 const HOST = process.env.HOST ?? '127.0.0.1';
@@ -18,6 +31,11 @@ const MAX_UPLOAD_BYTES = 20 * 1024 * 1024;
 const STATIC: Record<string, [file: string, type: string]> = {
   '/': ['index.html', 'text/html; charset=utf-8'],
   '/artifacts': ['artifacts.html', 'text/html; charset=utf-8'],
+  '/builds': ['builds.html', 'text/html; charset=utf-8'],
+  '/builds.js': ['builds.js', 'text/javascript; charset=utf-8'],
+  '/character': ['character.html', 'text/html; charset=utf-8'],
+  '/character.js': ['character.js', 'text/javascript; charset=utf-8'],
+  '/character-view.js': ['character-view.js', 'text/javascript; charset=utf-8'],
   '/app.js': ['app.js', 'text/javascript; charset=utf-8'],
   '/artifacts.js': ['artifacts.js', 'text/javascript; charset=utf-8'],
   '/lib.js': ['lib.js', 'text/javascript; charset=utf-8'],
@@ -55,10 +73,11 @@ async function readBody(req: IncomingMessage): Promise<string> {
 }
 
 async function getArtifacts(uid: string, refresh: boolean) {
-  const [assets, relicLevels, stored, details] = await Promise.all([
+  const [assets, relicLevels, stored, overrides, details] = await Promise.all([
     loadAssets(),
     loadRelicLevels(),
     loadInventory(),
+    loadOverrides(),
     getCookie()
       ? fetchCharacterDetails(uid, { useCache: !refresh }).then(
           (list) => ({ list }),
@@ -67,19 +86,44 @@ async function getArtifacts(uid: string, refresh: boolean) {
       : Promise.resolve({ error: 'HOYOLAB_COOKIE is not configured. See .env.example.' }),
   ]);
 
-  const equipped = 'list' in details ? { artifacts: fromHoyolab(details.list) } : { error: details.error };
+  const characters = 'list' in details ? details.list : [];
+  const priorities = new Map<string, StatPriority>();
+  for (const c of characters) {
+    const p = applyOverride(priorityFromHoyolab(c), overrides[c.base.id]);
+    if (p) priorities.set(c.base.name, p);
+  }
+
+  const equippedList = 'list' in details ? withFit(fromHoyolab(characters), priorities) : null;
+  const equipped = equippedList ? { artifacts: equippedList } : { error: (details as { error: string }).error };
   const inventory = stored
     ? {
         importedAt: stored.importedAt,
         source: stored.file.source,
-        artifacts: fromGood(stored.file, {
-          relicLevels,
-          setNames: setNames(assets),
-          characterNames: 'list' in details ? details.list.map((c) => c.base.name) : [],
-        }),
+        artifacts: withFit(
+          fromGood(stored.file, {
+            relicLevels,
+            setNames: setNames(assets),
+            characterNames: characters.map((c) => c.base.name),
+          }),
+          priorities,
+        ),
       }
     : null;
-  return { equipped, inventory };
+  const builds = equippedList
+    ? characters.map((c) => assessBuild(c.base.name, equippedList.filter((a) => a.location === c.base.name), priorities.get(c.base.name), c.base.id))
+    : null;
+  return { equipped, inventory, builds };
+}
+
+/** Recommended artifact stats by avatar ID (same IDs as Enka), for highlighting showcase builds. */
+async function getRecommendations(uid: string, refresh: boolean): Promise<Record<number, RecommendedNames>> {
+  const out: Record<number, RecommendedNames> = {};
+  const [details, overrides] = await Promise.all([fetchCharacterDetails(uid, { useCache: !refresh }), loadOverrides()]);
+  for (const c of details) {
+    const p = applyOverride(priorityFromHoyolab(c), overrides[c.base.id]);
+    if (p) out[c.base.id] = recommendedNames(p);
+  }
+  return out;
 }
 
 const server = createServer(async (req, res) => {
@@ -101,19 +145,57 @@ const server = createServer(async (req, res) => {
     }
   }
 
+  const priorityMatch = url.pathname.match(/^\/api\/priorities\/(\d{1,9})$/);
+  if (priorityMatch) {
+    if (req.method !== 'PUT' && req.method !== 'DELETE') return sendJson(res, 405, { error: 'Method not allowed' });
+    if (!isSameOriginJson(req)) return sendJson(res, 403, { error: 'Forbidden' });
+    const id = Number(priorityMatch[1]);
+    if (req.method === 'DELETE') {
+      await setOverride(id, undefined);
+      return sendJson(res, 200, { ok: true });
+    }
+    let body: unknown;
+    try {
+      body = JSON.parse(await readBody(req));
+    } catch {
+      return sendJson(res, 400, { error: 'Body is not valid JSON.' });
+    }
+    if (!isValidOverride(body)) return sendJson(res, 400, { error: 'Choose 1 to 4 different substats.' });
+    await setOverride(id, body);
+    return sendJson(res, 200, { ok: true });
+  }
+
   if (req.method !== 'GET') return sendJson(res, 405, { error: 'Method not allowed' });
 
   if (url.pathname === '/api/config') {
     return sendJson(res, 200, { defaultUid: process.env.GENSHIN_UID ?? DEFAULT_UID, rosterEnabled: Boolean(getCookie()) });
   }
 
-  const [, route, rawUid] = url.pathname.match(/^\/api\/(profile|roster|artifacts)\/([^/]+)$/) ?? [];
+  const [, route, rawUid] = url.pathname.match(/^\/api\/(profile|roster|artifacts|recommendations|characters)\/([^/]+)$/) ?? [];
   if (route && rawUid !== undefined) {
     const uid = decodeURIComponent(rawUid);
     if (!isValidUid(uid)) return sendJson(res, 400, { error: 'UID must be 9–10 digits.' });
     const refresh = url.searchParams.has('refresh');
 
     if (route === 'artifacts') return sendJson(res, 200, await getArtifacts(uid, refresh));
+
+    if (route === 'recommendations') {
+      if (!getCookie()) return sendJson(res, 501, { error: 'HOYOLAB_COOKIE is not configured. See .env.example.' });
+      try {
+        return sendJson(res, 200, await getRecommendations(uid, refresh));
+      } catch (err) {
+        return sendJson(res, 502, { error: hoyolabMessage(err) });
+      }
+    }
+
+    if (route === 'characters') {
+      if (!getCookie()) return sendJson(res, 501, { error: 'HOYOLAB_COOKIE is not configured. See .env.example.' });
+      try {
+        return sendJson(res, 200, (await fetchCharacterDetails(uid, { useCache: !refresh })).map(characterFromHoyolab));
+      } catch (err) {
+        return sendJson(res, 502, { error: hoyolabMessage(err) });
+      }
+    }
 
     if (route === 'roster') {
       if (!getCookie()) return sendJson(res, 501, { error: 'HOYOLAB_COOKIE is not configured. See .env.example.' });

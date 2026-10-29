@@ -21,8 +21,11 @@ The page loads the default UID automatically. Use `?uid=<uid>` or the form to vi
 The server is required because Enka sends no CORS headers, so a browser can't call it directly. It exposes:
 - `GET /api/profile/:uid` returns the normalized `Profile` JSON. Add `?refresh` to skip the cache and `&lang=ja` to change the language.
 - `GET /api/roster/:uid` returns **all owned characters** from HoYoLAB (requires `HOYOLAB_COOKIE`). Add `?refresh` to skip the 5-minute cache.
+- `GET /api/characters/:uid` returns **every owned character** from HoYoLAB `character/detail`, in the same shape as showcase characters (requires `HOYOLAB_COOKIE`).
 - `GET /api/config` returns `{ defaultUid, rosterEnabled }`.
-- `GET /api/artifacts/:uid` returns `{ equipped, inventory }`: live equipped artifacts from HoYoLAB plus the imported GOOD inventory (or `null`).
+- `GET /api/artifacts/:uid` returns `{ equipped, inventory, builds }`: live equipped artifacts from HoYoLAB, the imported GOOD inventory (or `null`), and a build check for each character. Artifacts worn by a character with recommendations include a `fit` score.
+- `GET /api/recommendations/:uid` returns recommended artifact stats by avatar ID (requires `HOYOLAB_COOKIE`), with your desired-substat choices applied. The profile page uses it to mark recommended main stats and desired substats with ✓.
+- `PUT /api/priorities/:avatarId` (`{ "subs": [6, 23, 20, 22] }`, 1–4 prop type IDs) / `DELETE /api/priorities/:avatarId` saves or resets a character's desired substats. Same JSON and same-origin rules as `/api/inventory`.
 - `POST /api/inventory` (GOOD JSON body) / `DELETE /api/inventory` replaces or clears the imported inventory. These requests must have `Content-Type: application/json` and come from the page itself. Requests from other websites are rejected.
 
 #### Viewing all characters (optional)
@@ -32,6 +35,8 @@ The showcase is limited to 12 characters. To list every character you own:
 1. `cp .env.example .env`
 2. Log in at [hoyolab.com](https://www.hoyolab.com). Open DevTools → Application → Cookies and copy `ltuid_v2`, `ltoken_v2` and `ltmid_v2` into `HOYOLAB_COOKIE`.
 3. Restart the server.
+
+Each character's name in **All characters** links to `/character?uid=…&id=…`. That page shows the same stats, talents, weapon and artifacts as the showcase panel, using HoYoLAB data, so it works for characters outside your showcase. HoYoLAB talent levels include constellation boosts but can be a level lower than the game when other talent bonuses apply.
 
 The cookies are account credentials. `.env` is gitignored, and the server only listens on `127.0.0.1`. Your HoYoLAB account must be linked to the game account.
 
@@ -45,7 +50,19 @@ The cookies are account credentials. `.env` is gitignored, and the server only l
   - [Irminsul](https://github.com/konkers/irminsul)
   - [Inventory Kamera](https://github.com/Andrewthe13th/Inventory_Kamera)
 
-  The import is saved locally to `.data/good.json` (gitignored). GOOD files don't include main-stat values, so the page calculates them from Enka's `relic_levels.json`.
+  The import is saved locally to `.data/good.json` (gitignored). GOOD files don't include main-stat values or roll counts, so the page calculates main stats from Enka's `relic_levels.json` and estimates rolls from substat values.
+
+The **Fit** column compares each artifact with its wearer's recommended stats (see below) and shows how many desired substats it has, or a **Perfect** badge. Recommended main stats are marked ✓.
+
+#### Build check page
+
+`/builds` grades every character's equipped artifacts against the stats HoYoLAB recommends for that character: sands, goblet and circlet main stats, plus preferred substats. These come from the `recommend_relic_property` field of `character/detail`, and your own HoYoLAB customizations take priority.
+
+Each piece is scored by how many substat rolls went into recommended stats, compared with a strong piece. The target is about 4 useful rolls when 1 stat is recommended, 6 for 2, 7 for 3, and 8 for 4 or more. Pieces are then averaged into a grade: Great, Good, Needs work or Poor. A missing piece or wrong main stat caps the grade at Needs work, and CRIT Rate and CRIT DMG circlets count as interchangeable. Characters with no artifacts are shown as "Not built". The list sorts best first, and each name links to that character's artifacts.
+
+HoYoLAB usually recommends only 1–3 substats, so each row has **Edit desired substats** to choose up to 4 yourself. Choices are saved to `.data/priorities.json` (gitignored) and replace HoYoLAB's substats everywhere in the app. Main stats still come from HoYoLAB. When a piece's main stat is a desired ATK%, HP% or DEF%, the matching flat substat on that piece is also marked ✓; it doesn't count toward Perfect. A piece is **Perfect** when it has a recommended main stat and every desired substat it can have (a substat can't repeat the main stat). Perfect is only checked once 4 desired substats are chosen.
+
+Each row also links to that character's [Genshin Helper Team](https://genshin-impact-helper-team.github.io/genshin-builds/en/) build guide. Their license doesn't allow copying their recommendations, so the app only links to them.
 
 ### CLI
 
@@ -88,7 +105,9 @@ Notes on the ID mapping:
 - `src/format.ts`: text output
 - `src/cli.ts`: CLI entry point
 - `src/hoyolab.ts`: HoYoLAB client for the roster and character details (DS signing, UID → server, retcode errors)
-- `src/artifacts.ts`: converts HoYoLAB relics and GOOD artifacts into one artifact format (pure, tested)
+- `src/artifacts.ts`: converts HoYoLAB relics and GOOD artifacts into one artifact format, and scores builds (pure, tested)
 - `src/inventory.ts`: stores the imported GOOD inventory in `.data/`
+- `src/characters.ts`: converts HoYoLAB character details into the showcase `Character` shape
+- `src/priorities.ts`: stores your desired substats per character in `.data/priorities.json`
 - `src/server.ts`: web server (static pages + JSON API)
-- `public/`: the pages (plain HTML/CSS/JS, no build step). `lib.js` holds shared helpers, `app.js` drives the profile page and `artifacts.js` drives the artifacts page.
+- `public/`: the pages (plain HTML/CSS/JS, no build step). `lib.js` holds shared helpers, `app.js` drives the profile page, `artifacts.js` the artifacts page, `builds.js` the build check page and `character.js` the character page. `character-view.js` renders a character panel for both the profile and character pages.

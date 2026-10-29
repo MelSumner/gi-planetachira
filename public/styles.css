@@ -9,6 +9,10 @@
   --accent: #e8c77a;
   --focus: #8ab4ff;
   --error: #ff9a9a;
+  --grade-great: #8fe3a8;
+  --grade-good: #c4dd8c;
+  --grade-needs-work: #f5c46b;
+  --grade-poor: #ff9a9a;
   --el: var(--accent);
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   line-height: 1.5;
@@ -25,6 +29,10 @@
     --accent: #7a5a12;
     --focus: #1a56c4;
     --error: #a10e0e;
+    --grade-great: #146c2e;
+    --grade-good: #4a6512;
+    --grade-needs-work: #8a5300;
+    --grade-poor: #a10e0e;
   }
 }
 
@@ -375,3 +383,65 @@ select {
 @media (prefers-reduced-motion: no-preference) {
   .tab { transition: border-color 0.15s, background 0.15s; }
 }
+
+/* Build check + fit */
+.grade {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.grade-great { color: var(--grade-great); }
+.grade-good { color: var(--grade-good); }
+.grade-needs-work { color: var(--grade-needs-work); }
+.grade-poor { color: var(--grade-poor); }
+
+.score { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.35rem; font-variant-numeric: tabular-nums; }
+.score meter { width: 5rem; height: 0.6rem; }
+
+.fit { white-space: nowrap; }
+
+.build-table tbody tr { border-left: 4px solid var(--el); }
+.build-table .char-icon { border-radius: 50%; background: var(--surface-2); border: 2px solid var(--el); }
+.char-sub { display: block; font-size: 0.85rem; font-weight: 400; }
+.issues { margin: 0; padding-left: 1.1rem; max-width: 28rem; }
+.issues li + li { margin-top: 0.2rem; }
+.build-table .subs li { white-space: normal; }
+
+/* Recommended substats on the profile page: marker + color + bold, plus hidden text for screen readers */
+.subs .recommended { color: var(--grade-great); font-weight: 700; }
+.rec-mark { color: var(--grade-great); font-weight: 700; }
+.legend { margin: 0 0 0.5rem; font-size: 0.9rem; }
+
+.perfect-badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  color: var(--grade-great);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.fit .perfect-badge, .fit-desired { display: block; margin-top: 0.25rem; width: fit-content; font-size: 0.85rem; }
+.source-note, .helper-link { margin: 0.35rem 0 0; font-size: 0.85rem; }
+.editor { margin-top: 0.5rem; }
+.editor summary { cursor: pointer; }
+.editor fieldset { margin: 0.5rem 0; }
+.editor fieldset p { margin: 0 0 0.5rem; font-size: 0.85rem; }
+.sub-choices { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.25rem 0.75rem; }
+.sub-choices label { display: flex; gap: 0.4rem; align-items: center; white-space: nowrap; }
+.sub-choices input[type='checkbox'] { width: auto; padding: 0; margin: 0; accent-color: var(--accent); }
+.editor-actions { display: flex; gap: 0.5rem; }
+.editor .status { margin: 0.5rem 0 0; }
+.main-ok { color: var(--grade-great); font-weight: 700; }
+
+.back-link { font-weight: 600; }
+.char-picker { margin-bottom: 1rem; }
+.card-note { margin: 0.5rem 0 0; font-size: 0.85rem; }
+.roster-card h3 a { color: inherit; }
+/* Character page uses one heading level higher than the profile panel; keep the same look. */
+.char-header h2 { font-size: 1.5rem; margin: 0; }
+.card h3 { font-size: 1rem; margin: 0 0 0.75rem; }

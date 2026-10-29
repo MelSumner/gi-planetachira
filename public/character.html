@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Character · Genshin Profile Viewer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/character.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <h1>Genshin Profile Viewer</h1>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Profile</a></li>
+          <li><a href="/artifacts">Artifacts</a></li>
+          <li><a href="/builds">Build check</a></li>
+        </ul>
+      </nav>
+      <form id="uid-form" class="uid-form">
+        <label for="uid">UID</label>
+        <input id="uid" name="uid" inputmode="numeric" pattern="\d{9,10}" required autocomplete="off" aria-describedby="uid-hint" />
+        <span id="uid-hint" class="visually-hidden">9 or 10 digits</span>
+        <button type="submit">Load</button>
+        <button type="button" id="refresh">Refresh</button>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <p><a id="back-link" class="back-link" href="/#roster"><span aria-hidden="true">← </span>All characters</a></p>
+
+      <form id="picker" class="filters char-picker" hidden>
+        <label>Character
+          <select id="char-select"></select>
+        </label>
+        <button type="submit">Show</button>
+      </form>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <article id="character" class="character-panel" aria-labelledby="character-name" hidden></article>
+    </main>
+
+    <footer class="site-footer">
+      <p>Character details come from HoYoLAB, so this page works for every character you own, not just your showcase.</p>
+    </footer>
+  </body>
+</html>

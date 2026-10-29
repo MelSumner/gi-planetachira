@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Build check · Genshin Profile Viewer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/builds.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <h1>Genshin Profile Viewer</h1>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Profile</a></li>
+          <li><a href="/artifacts">Artifacts</a></li>
+          <li><a href="/builds" aria-current="page">Build check</a></li>
+        </ul>
+      </nav>
+      <form id="uid-form" class="uid-form">
+        <label for="uid">UID</label>
+        <input id="uid" name="uid" inputmode="numeric" pattern="\d{9,10}" required autocomplete="off" aria-describedby="uid-hint" />
+        <span id="uid-hint" class="visually-hidden">9 or 10 digits</span>
+        <button type="submit">Load</button>
+        <button type="button" id="refresh">Refresh</button>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1" class="artifacts-page">
+      <h2>Build check</h2>
+      <p>
+        Compares each character's equipped artifacts with the stats HoYoLAB recommends for them, so you can see who needs better
+        artifacts. HoYoLAB often lists fewer than 4 substats, so you can choose each character's desired substats with
+        <strong>Edit desired substats</strong>. Your choices are saved on this computer and used everywhere in the app.
+        Main stats still come from HoYoLAB.
+      </p>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <details class="import-panel">
+        <summary>How grades work</summary>
+        <div class="import-body">
+          <ul>
+            <li><strong>Main stats:</strong> Sands, Goblet and Circlet should have a recommended main stat. CRIT Rate and CRIT DMG circlets count as interchangeable.</li>
+            <li>
+              <strong>Useful rolls:</strong> each substat roll that went into a recommended stat counts once (a substat rolled 3 times counts 3).
+              A strong +20 five-star piece has about 4 useful rolls when 1 stat is recommended, 6 for 2, 7 for 3, and 8 for 4 or more.
+              Four-star pieces count 80% per roll.
+            </li>
+            <li><strong>Score:</strong> average of each piece's useful rolls compared with that target. An empty slot counts as 0.</li>
+            <li>
+              <strong>Grade:</strong> Great is 60% or higher, Good 45%, Needs work 30%, and Poor is below that.
+              A missing piece or wrong main stat caps the grade at Needs work.
+            </li>
+            <li><strong>Perfect:</strong> the right main stat plus every desired substat the piece can have. This needs 4 desired substats, so set them with Edit desired substats. A substat can't match the main stat, so an ATK% Sands only needs the other desired substats.</li>
+            <li><strong>Not built:</strong> characters with no artifacts equipped aren't graded and sort last.</li>
+          </ul>
+          <p class="muted">This is a quick check of stats only. It doesn't consider set bonuses, weapons or team needs.</p>
+        </div>
+      </details>
+
+      <fieldset id="filters" class="filters" hidden>
+        <legend>Filters</legend>
+        <label>Grade
+          <select id="f-grade">
+            <option value="">Any</option>
+            <option value="attention">Needs attention (Needs work or Poor)</option>
+            <option>Great</option><option>Good</option><option>Needs work</option><option>Poor</option>
+          </select>
+        </label>
+        <label>Element
+          <select id="f-element">
+            <option value="">Any</option>
+            <option>Anemo</option><option>Cryo</option><option>Dendro</option><option>Electro</option><option>Geo</option><option>Hydro</option><option>Pyro</option>
+          </select>
+        </label>
+        <label>Min character level
+          <select id="f-level">
+            <option value="1">Any</option><option value="70">70</option><option value="80">80</option><option value="90">90</option>
+          </select>
+        </label>
+        <button type="button" id="reset-filters">Reset filters</button>
+      </fieldset>
+
+      <p id="count" class="muted" aria-live="polite"></p>
+
+      <div class="table-wrap">
+        <table id="build-table" class="artifact-table build-table" hidden>
+          <caption class="visually-hidden">Build check per character. Column headers with buttons can be sorted.</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-sort="name"><button type="button">Character</button></th>
+              <th scope="col" data-sort="score"><button type="button">Grade</button></th>
+              <th scope="col" data-sort="mains"><button type="button">Main stats</button></th>
+              <th scope="col" data-sort="rolls"><button type="button">Useful rolls</button></th>
+              <th scope="col" data-sort="perfect"><button type="button">Perfect</button></th>
+              <th scope="col">Issues</th>
+              <th scope="col">Recommended</th>
+            </tr>
+          </thead>
+          <tbody id="build-rows"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Recommended stats and equipped artifacts come from HoYoLAB. Build links go to the
+        <a href="https://genshin-impact-helper-team.github.io/genshin-builds/en/">Genshin Helper Team</a> guides.</p>
+    </footer>
+  </body>
+</html>

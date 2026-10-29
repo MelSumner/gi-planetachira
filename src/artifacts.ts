@@ -1,4 +1,4 @@
-import type { RawDetailCharacter } from './hoyolab.js';
+import type { RawDetailCharacter, RawRecommendedProperties } from './hoyolab.js';
 
 export type Slot = 'Flower' | 'Plume' | 'Sands' | 'Goblet' | 'Circlet';
 
@@ -23,6 +23,8 @@ export interface InventoryArtifact {
   locked?: boolean;
   icon?: string;
   critValue: number;
+  /** How well this artifact suits the character wearing it (set when the character has stat recommendations). */
+  fit?: ArtifactFit;
 }
 
 /** relic_levels.json: [rarity][level + 1][propType] → value (percent stats as fractions). */
@@ -79,6 +81,25 @@ const POS_SLOTS: Slot[] = ['Flower', 'Plume', 'Sands', 'Goblet', 'Circlet'];
 const GOOD_SLOTS: Record<string, Slot> = { flower: 'Flower', plume: 'Plume', sands: 'Sands', goblet: 'Goblet', circlet: 'Circlet' };
 // Enka icon suffix per slot: UI_RelicIcon_<setId>_<n>
 const ICON_SUFFIX: Record<Slot, number> = { Flower: 4, Plume: 2, Sands: 5, Goblet: 1, Circlet: 3 };
+
+// Highest single 5-star substat roll per prop type. Each roll is 70/80/90/100% of this.
+const MAX_SUB_ROLL: Record<number, number> = {
+  2: 298.75, 3: 5.83, 5: 19.45, 6: 5.83, 8: 23.15, 9: 7.29, 20: 3.89, 22: 7.77, 23: 6.48, 28: 23.31,
+};
+// Lower-rarity rolls (and so their value) scale down from 5-star.
+const RARITY_ROLL_SCALE: Record<number, number> = { 5: 1, 4: 0.8, 3: 0.6, 2: 0.4, 1: 0.2 };
+// Upgrades per rarity: one substat roll every 4 levels up to max level.
+const MAX_LEVEL: Record<number, number> = { 5: 20, 4: 16, 3: 12, 2: 4, 1: 4 };
+
+/** Smallest roll count that can produce `value` (GOOD files don't record rolls). */
+export function estimateRolls(type: number, value: number, rarity: number): number | undefined {
+  const max = MAX_SUB_ROLL[type];
+  if (!max) return undefined;
+  // Small tolerance because displayed values are rounded.
+  return Math.max(1, Math.ceil(value / (max * (RARITY_ROLL_SCALE[rarity] ?? 1)) - 0.05));
+}
+
+export const statName = (type: number) => PROPS[type]?.[0] ?? `Stat ${type}`;
 
 function stat(type: number, value: number, rolls?: number): ArtifactStat {
   const [name, percent] = PROPS[type] ?? [`Stat ${type}`, false];
@@ -168,7 +189,7 @@ export function fromGood(file: GoodFile, ctx: GoodContext): InventoryArtifact[] 
 
     const subs = (a.substats ?? [])
       .filter((s) => s.key && GOOD_STATS[s.key] !== undefined)
-      .map((s) => stat(GOOD_STATS[s.key]!, s.value));
+      .map((s) => stat(GOOD_STATS[s.key]!, s.value, estimateRolls(GOOD_STATS[s.key]!, s.value, a.rarity)));
     const set = sets.get(a.setKey);
 
     return [
@@ -186,5 +207,204 @@ export function fromGood(file: GoodFile, ctx: GoodContext): InventoryArtifact[] 
         critValue: critValue(subs),
       },
     ];
+  });
+}
+
+export interface StatPriority {
+  Sands: number[];
+  Goblet: number[];
+  Circlet: number[];
+  subs: number[];
+  /** hoyolab: HoYoLAB's default; hoyolab-custom: set by the player on HoYoLAB; mine: chosen in this app. */
+  source: PrioritySource;
+}
+
+export type PrioritySource = 'hoyolab' | 'hoyolab-custom' | 'mine';
+
+/** Substats that can be chosen as desired. Flat HP/ATK/DEF are left out: they're never worth prioritizing. */
+export const SUBSTAT_CHOICES = [6, 3, 9, 20, 22, 23, 28] as const;
+export const MAX_DESIRED_SUBS = 4;
+
+/** The player's own choice of desired substats for a character, saved locally. */
+export interface PriorityOverride {
+  subs: number[];
+}
+
+export function isValidOverride(o: unknown): o is PriorityOverride {
+  if (!o || typeof o !== 'object' || !Array.isArray((o as PriorityOverride).subs)) return false;
+  const subs = (o as PriorityOverride).subs;
+  return (
+    subs.length >= 1 &&
+    subs.length <= MAX_DESIRED_SUBS &&
+    new Set(subs).size === subs.length &&
+    subs.every((t) => (SUBSTAT_CHOICES as readonly unknown[]).includes(t))
+  );
+}
+
+/** Main stats still come from HoYoLAB; only the substats are replaced. */
+export function applyOverride(p: StatPriority | undefined, o: PriorityOverride | undefined): StatPriority | undefined {
+  if (!o) return p;
+  return { Sands: p?.Sands ?? [], Goblet: p?.Goblet ?? [], Circlet: p?.Circlet ?? [], subs: [...o.subs], source: 'mine' };
+}
+
+/** HoYoLAB's per-character stat recommendation, preferring the player's own customization. */
+export function priorityFromHoyolab(c: RawDetailCharacter): StatPriority | undefined {
+  const rec = c.recommend_relic_property;
+  const hasAny = (p: RawRecommendedProperties | null | undefined): p is RawRecommendedProperties =>
+    Boolean(p && [p.sand_main_property_list, p.goblet_main_property_list, p.circlet_main_property_list, p.sub_property_list].some((l) => l?.length));
+  const custom = hasAny(rec?.custom_properties);
+  const p = custom ? rec?.custom_properties : rec?.recommend_properties;
+  if (!hasAny(p)) return undefined;
+  return {
+    Sands: p.sand_main_property_list ?? [],
+    Goblet: p.goblet_main_property_list ?? [],
+    Circlet: p.circlet_main_property_list ?? [],
+    subs: p.sub_property_list ?? [],
+    source: custom ? 'hoyolab-custom' : 'hoyolab',
+  };
+}
+
+export interface ArtifactFit {
+  /** null for Flower/Plume (fixed main stat) or when nothing is recommended for the slot. */
+  mainOk: boolean | null;
+  usefulRolls: number;
+  /** Useful rolls a strong max-level 5-star piece has, given how many substats are recommended. */
+  targetRolls: number;
+  /** 0–1 against that target. null when no recommended substat can appear on this piece. */
+  score: number | null;
+  /** Right main stat and every desired substat it can have. Needs 4 desired substats to be chosen. */
+  perfect: boolean;
+  /** Distinct desired substats on the piece, and how many it could have. */
+  desiredHit: number;
+  desiredMax: number;
+}
+
+// A +20 5-star piece has 8–9 substat rolls. With fewer useful substat types, fewer rolls can realistically
+// land on them, so the target scales with how many are recommended (index = number of useful types).
+export const TARGET_ROLLS = [0, 4, 6, 7, 8];
+
+const MAIN_SLOTS = ['Sands', 'Goblet', 'Circlet'] as const;
+const isMainSlot = (slot: Slot): slot is (typeof MAIN_SLOTS)[number] => (MAIN_SLOTS as readonly string[]).includes(slot);
+
+/** CRIT Rate and CRIT DMG circlets are interchangeable (which is better depends on crit ratio). */
+function acceptedMains(slot: (typeof MAIN_SLOTS)[number], p: StatPriority): number[] {
+  const list = p[slot];
+  return slot === 'Circlet' && (list.includes(20) || list.includes(22)) ? [...new Set([...list, 20, 22])] : list;
+}
+
+export function assessArtifact(a: InventoryArtifact, p: StatPriority): ArtifactFit {
+  const wanted = isMainSlot(a.slot) ? acceptedMains(a.slot, p) : [];
+  const mainOk = wanted.length ? wanted.includes(a.main.type) : null;
+  // A substat can never match the main stat, so those can't count toward the ideal.
+  const subTypes = p.subs.filter((t) => t !== a.main.type);
+  const targetRolls = TARGET_ROLLS[Math.min(subTypes.length, 4)] ?? 0;
+  const usefulRolls = a.subs.filter((s) => subTypes.includes(s.type)).reduce((n, s) => n + (s.rolls ?? 1), 0);
+  const worth = RARITY_ROLL_SCALE[a.rarity] ?? 1;
+  const score = targetRolls ? Math.min(1, (usefulRolls * worth) / targetRolls) : null;
+  const desiredMax = Math.min(subTypes.length, 4);
+  const desiredHit = new Set(a.subs.filter((s) => subTypes.includes(s.type)).map((s) => s.type)).size;
+  // With fewer than 4 desired substats, almost anything would count as perfect.
+  const perfect = p.subs.length >= MAX_DESIRED_SUBS && mainOk !== false && desiredHit >= desiredMax;
+  return { mainOk, usefulRolls, targetRolls, score, perfect, desiredHit, desiredMax };
+}
+
+export type Grade = 'Great' | 'Good' | 'Needs work' | 'Poor';
+
+export interface BuildCheck {
+  character: string;
+  /** Avatar ID (shared by HoYoLAB and Enka). */
+  id?: number;
+  priority?: StatPriority;
+  /** Recommended stats by name, for display. */
+  recommended?: RecommendedNames;
+  /** 0–1 average artifact score (empty slots count as 0). */
+  score: number | null;
+  grade: Grade | null;
+  pieces: number;
+  mainOk: number;
+  mainTotal: number;
+  usefulRolls: number;
+  targetRolls: number;
+  /** Equipped pieces that are perfect for this character. */
+  perfect: number;
+  issues: string[];
+}
+
+export interface RecommendedNames {
+  Sands: string[];
+  Goblet: string[];
+  Circlet: string[];
+  subs: string[];
+  source: PrioritySource;
+}
+
+export function recommendedNames(p: StatPriority): RecommendedNames {
+  // Circlets list both crit stats when either is recommended, matching how pieces are judged.
+  return {
+    Sands: p.Sands.map(statName),
+    Goblet: p.Goblet.map(statName),
+    Circlet: acceptedMains('Circlet', p).map(statName),
+    subs: p.subs.map(statName),
+    source: p.source,
+  };
+}
+
+export const GRADE_THRESHOLDS: [Grade, number][] = [
+  ['Great', 0.6],
+  ['Good', 0.45],
+  ['Needs work', 0.3],
+  ['Poor', 0],
+];
+
+export function assessBuild(character: string, artifacts: InventoryArtifact[], p: StatPriority | undefined, id?: number): BuildCheck {
+  const base = { character, id, pieces: artifacts.length, mainOk: 0, mainTotal: 0, usefulRolls: 0, targetRolls: 0, perfect: 0 };
+  if (!p) return { ...base, score: null, grade: null, issues: ['HoYoLAB has no stat recommendation for this character.'] };
+  const recommended = recommendedNames(p);
+  // Unbuilt characters aren't graded, so they don't crowd out characters that are actually in use.
+  if (!artifacts.length) return { ...base, priority: p, recommended, score: null, grade: null, issues: ['No artifacts equipped.'] };
+
+  const issues: string[] = [];
+  let total = 0;
+  // Pieces whose main stat already covers every recommended substat have nothing to judge, so they're skipped.
+  let judged = 0;
+  let blocking = false;
+  for (const slot of POS_SLOTS) {
+    if (isMainSlot(slot) && p[slot].length) base.mainTotal++;
+    const a = artifacts.find((x) => x.slot === slot);
+    if (!a) {
+      issues.push(`No ${slot} equipped.`);
+      blocking = true;
+      judged++;
+      continue;
+    }
+    const fit = assessArtifact(a, p);
+    base.usefulRolls += fit.usefulRolls;
+    base.targetRolls += fit.targetRolls;
+    if (fit.score !== null) {
+      total += fit.score;
+      judged++;
+    }
+    if (fit.mainOk === true) base.mainOk++;
+    if (fit.perfect) base.perfect++;
+    if (fit.mainOk === false) blocking = true;
+    if (a.rarity < 5) issues.push(`${slot} is ${a.rarity}-star.`);
+    else if (a.level < (MAX_LEVEL[a.rarity] ?? 20)) issues.push(`${slot} is only +${a.level}.`);
+    if (fit.score !== null && fit.score < 0.3) {
+      issues.push(`${slot} has ${fit.usefulRolls} useful substat ${fit.usefulRolls === 1 ? 'roll' : 'rolls'} (strong: about ${fit.targetRolls}).`);
+    }
+  }
+
+  const score = judged ? total / judged : base.mainTotal ? base.mainOk / base.mainTotal : 1;
+  let grade = GRADE_THRESHOLDS.find(([, min]) => score >= min)![0];
+  // A missing piece or wrong main stat costs more than any substat, so cap the grade.
+  if (blocking && (grade === 'Great' || grade === 'Good')) grade = 'Needs work';
+  return { ...base, priority: p, recommended, score: Math.round(score * 1000) / 1000, grade, issues };
+}
+
+/** Attach fit to every artifact worn by a character with a recommendation. */
+export function withFit(artifacts: InventoryArtifact[], priorities: Map<string, StatPriority>): InventoryArtifact[] {
+  return artifacts.map((a) => {
+    const p = a.location ? priorities.get(a.location) : undefined;
+    return p ? { ...a, fit: assessArtifact(a, p) } : a;
   });
 }

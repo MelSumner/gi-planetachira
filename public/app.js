@@ -1,11 +1,13 @@
-import { $, fmtValue, h, initPage, stars, syncUid } from './lib.js';
+import { characterView } from './character-view.js';
+import { $, h, initPage, stars, syncUid } from './lib.js';
 
-const TALENT_NAMES = ['Normal Attack', 'Elemental Skill', 'Elemental Burst'];
 const status = $('status');
 const uidInput = $('uid');
 
 let profile = null;
 let selected = 0;
+// HoYoLAB recommended stats by avatar ID; optional (needs HOYOLAB_COOKIE).
+let recommendations = {};
 
 async function load(uid, { refresh = false } = {}) {
   status.textContent = `Loading UID ${uid}…`;
@@ -94,118 +96,13 @@ $('character-tabs').addEventListener('keydown', (e) => {
   select((keys[e.key] + n) % n, true);
 });
 
-function card(id, title, ...content) {
-  return h('section', { class: 'card', 'aria-labelledby': id }, h('h4', { id }, ...[title].flat()), ...content);
-}
-
 function renderPanel() {
   const c = profile.characters[selected];
   if (!c) return;
   const panel = $('character-panel');
   panel.setAttribute('aria-labelledby', `tab-${selected}`);
   panel.className = `character-panel element-${c.element.toLowerCase()}`;
-
-  const header = h(
-    'div',
-    { class: 'char-header' },
-    c.icon ? h('img', { src: c.icon, alt: '', width: 96, height: 96 }) : null,
-    h(
-      'div',
-      {},
-      h('h3', {}, c.name),
-      h('p', { class: 'char-meta' }, stars(c.rarity), ` ${c.element} · Lv. ${c.level} · C${c.constellation} · Friendship ${c.friendship}`),
-    ),
-  );
-
-  const talents = card(
-    'talents-h',
-    'Talents',
-    h(
-      'dl',
-      { class: 'kv' },
-      ...c.talents.map((t, i) =>
-        h(
-          'div',
-          {},
-          h('dt', {}, TALENT_NAMES[i] ?? `Talent ${i + 1}`),
-          h('dd', {}, t.bonus ? `${t.base + t.bonus} (${t.base} + ${t.bonus})` : t.base),
-        ),
-      ),
-    ),
-  );
-
-  const stats = card(
-    'stats-h',
-    'Stats',
-    h('dl', { class: 'kv' }, ...c.stats.map((s) => h('div', {}, h('dt', {}, s.name), h('dd', {}, fmtValue(s))))),
-  );
-
-  const w = c.weapon;
-  const weapon = w
-    ? card(
-        'weapon-h',
-        'Weapon',
-        h(
-          'div',
-          { class: 'weapon-body' },
-          w.icon ? h('img', { src: w.icon, alt: '', width: 72, height: 72 }) : null,
-          h(
-            'div',
-            {},
-            h('p', { class: 'weapon-name' }, w.name),
-            h('p', {}, stars(w.rarity), ` Lv. ${w.level} · Refinement ${w.refinement}`),
-            h('p', {}, w.stats.map((s) => `${s.name} ${fmtValue(s)}`).join(' · ')),
-          ),
-        ),
-      )
-    : null;
-
-  const artifacts = c.artifacts.length
-    ? card(
-        'artifacts-h',
-        ['Artifacts ', h('span', { class: 'cv' }, `Crit Value ${c.critValue}`)],
-        h(
-          'div',
-          { class: 'table-wrap' },
-          h(
-            'table',
-            {},
-            h('caption', { class: 'visually-hidden' }, `${c.name} artifacts`),
-            h('thead', {}, h('tr', {}, ...['Slot', 'Set', 'Level', 'Main stat', 'Substats'].map((t) => h('th', { scope: 'col' }, t)))),
-            h(
-              'tbody',
-              {},
-              ...c.artifacts.map((a) =>
-                h(
-                  'tr',
-                  {},
-                  h(
-                    'th',
-                    { scope: 'row' },
-                    h('span', { class: 'slot' }, a.icon ? h('img', { src: a.icon, alt: '', width: 40, height: 40, loading: 'lazy' }) : null, a.slot),
-                  ),
-                  h('td', {}, a.set),
-                  h('td', {}, `+${a.level}`),
-                  h('td', {}, `${a.main.name} ${fmtValue(a.main)}`),
-                  h(
-                    'td',
-                    {},
-                    h(
-                      'ul',
-                      { class: 'subs' },
-                      ...a.subs.map((s) => h('li', { class: s.name.startsWith('CRIT') ? 'crit' : undefined }, `${s.name} ${fmtValue(s)}`)),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
-      )
-    : null;
-  artifacts?.classList.add('artifacts');
-
-  panel.replaceChildren(header, h('div', { class: 'grid' }, stats, h('div', { class: 'stack' }, talents, weapon)), artifacts ?? '');
+  panel.replaceChildren(...characterView(c, { uid: profile.uid, rec: recommendations[c.id], level: 3 }));
 }
 
 $('uid-form').addEventListener('submit', (e) => {
@@ -258,6 +155,8 @@ async function loadRoster(uid, { refresh = false } = {}) {
   }
 }
 
+const currentUid = () => new URLSearchParams(location.search).get('uid') ?? '';
+
 function renderRoster() {
   if (!roster) return;
   const element = $('roster-element').value;
@@ -285,7 +184,7 @@ function renderRoster() {
           h(
             'div',
             { class: 'roster-info' },
-            h('h3', {}, c.name),
+            h('h3', {}, h('a', { href: `/character?uid=${encodeURIComponent(currentUid())}&id=${c.id}` }, c.name)),
             h('p', {}, stars(c.rarity), ` ${c.element}`),
             h('p', {}, `Lv. ${c.level} · C${c.constellation} · Friendship ${c.friendship}`),
             c.weapon ? h('p', { class: 'roster-weapon' }, `${c.weapon.name} · Lv. ${c.weapon.level} R${c.weapon.refinement}`) : null,
@@ -314,8 +213,20 @@ function renderRoster() {
 
 for (const id of ['roster-element', 'roster-rarity', 'roster-sort']) $(id).addEventListener('change', renderRoster);
 
+async function loadRecommendations(uid, { refresh = false } = {}) {
+  recommendations = {};
+  if (!rosterEnabled) return;
+  try {
+    const res = await fetch(`/api/recommendations/${encodeURIComponent(uid)}${refresh ? '?refresh' : ''}`);
+    if (res.ok) recommendations = await res.json();
+  } catch {
+    // Highlighting is optional; the build still renders without it.
+  }
+  if (profile) renderPanel();
+}
+
 async function loadAll(uid, opts) {
-  await Promise.all([load(uid, opts), loadRoster(uid, opts)]);
+  await Promise.all([load(uid, opts), loadRoster(uid, opts), loadRecommendations(uid, opts)]);
   renderRoster(); // re-link "View build" once the showcase has loaded
 }
 
