@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Genshin Profile Viewer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <h1>Genshin Profile Viewer</h1>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/" aria-current="page">Profile</a></li>
+          <li><a href="/artifacts">Artifacts</a></li>
+        </ul>
+      </nav>
+      <form id="uid-form" class="uid-form">
+        <label for="uid">UID</label>
+        <input id="uid" name="uid" inputmode="numeric" pattern="\d{9,10}" required autocomplete="off" aria-describedby="uid-hint" />
+        <span id="uid-hint" class="visually-hidden">9 or 10 digits</span>
+        <button type="submit">Load</button>
+        <button type="button" id="refresh">Refresh</button>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <section id="profile" class="profile" aria-labelledby="player-name" hidden>
+        <h2 id="player-name"></h2>
+        <p id="player-signature" class="signature"></p>
+        <dl id="player-stats" class="player-stats"></dl>
+      </section>
+
+      <section id="characters" aria-labelledby="characters-heading" hidden>
+        <h2 id="characters-heading">Showcase</h2>
+        <div id="character-tabs" class="character-tabs" role="tablist" aria-labelledby="characters-heading"></div>
+        <div id="character-panel" class="character-panel" role="tabpanel" tabindex="0"></div>
+      </section>
+
+      <section id="roster" class="roster" aria-labelledby="roster-heading" hidden>
+        <h2 id="roster-heading">All characters</h2>
+        <div id="roster-controls" class="roster-controls" hidden>
+          <label>Element
+            <select id="roster-element">
+              <option value="">All</option>
+              <option>Pyro</option><option>Hydro</option><option>Anemo</option><option>Electro</option>
+              <option>Dendro</option><option>Cryo</option><option>Geo</option>
+            </select>
+          </label>
+          <label>Rarity
+            <select id="roster-rarity">
+              <option value="">All</option>
+              <option value="5">5-star</option>
+              <option value="4">4-star</option>
+            </select>
+          </label>
+          <label>Sort by
+            <select id="roster-sort">
+              <option value="level">Level</option>
+              <option value="rarity">Rarity</option>
+              <option value="constellation">Constellation</option>
+              <option value="friendship">Friendship</option>
+              <option value="name">Name</option>
+            </select>
+          </label>
+          <p id="roster-count" class="roster-count" aria-live="polite"></p>
+        </div>
+        <div id="roster-body"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Showcase builds from <a href="https://enka.network">Enka.Network</a>. The full character list comes from HoYoLAB when configured.</p>
+    </footer>
+  </body>
+</html>

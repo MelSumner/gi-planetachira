@@ -1,0 +1,24 @@
+{
+  "name": "gi-planetachira",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fetch and display a Genshin Impact profile and showcase builds via the Enka.Network API",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts",
+    "serve": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

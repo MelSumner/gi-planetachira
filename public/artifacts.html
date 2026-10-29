@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artifacts · Genshin Profile Viewer</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/artifacts.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <h1>Genshin Profile Viewer</h1>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Profile</a></li>
+          <li><a href="/artifacts" aria-current="page">Artifacts</a></li>
+        </ul>
+      </nav>
+      <form id="uid-form" class="uid-form">
+        <label for="uid">UID</label>
+        <input id="uid" name="uid" inputmode="numeric" pattern="\d{9,10}" required autocomplete="off" aria-describedby="uid-hint" />
+        <span id="uid-hint" class="visually-hidden">9 or 10 digits</span>
+        <button type="submit">Load</button>
+        <button type="button" id="refresh">Refresh</button>
+      </form>
+    </header>
+
+    <main id="main" tabindex="-1" class="artifacts-page">
+      <h2>Artifacts</h2>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <fieldset id="source" class="source-picker">
+        <legend>Show</legend>
+        <label><input type="radio" name="source" value="inventory" /> <span>Full inventory <span id="inventory-meta" class="muted"></span></span></label>
+        <label><input type="radio" name="source" value="equipped" /> <span>Equipped on characters <span id="equipped-meta" class="muted"></span></span></label>
+      </fieldset>
+
+      <details id="import" class="import-panel">
+        <summary>Import full inventory (including unequipped artifacts)</summary>
+        <div class="import-body">
+          <p>
+            No game API exposes unequipped artifacts, so they have to be scanned from the game and exported as a
+            <strong>GOOD</strong> file (Genshin Open Object Description). Any of these produce one:
+          </p>
+          <ul>
+            <li><a href="https://frzyc.github.io/genshin-optimizer/">Genshin Optimizer</a>: scan artifact screenshots in the browser (works on any OS), then use Database → Export.</li>
+            <li><a href="https://github.com/konkers/irminsul">Irminsul</a> (Windows PC): reads inventory data while the game runs.</li>
+            <li><a href="https://github.com/Andrewthe13th/Inventory_Kamera">Inventory Kamera</a> (Windows PC): scans the in-game inventory automatically. Not updated since 2024, so it may not support newer sets.</li>
+          </ul>
+          <form id="import-form" class="import-form">
+            <label for="good-file">GOOD file (.json)</label>
+            <input id="good-file" type="file" accept=".json,application/json" required />
+            <button type="submit">Import</button>
+            <button type="button" id="clear-import" hidden>Remove imported inventory</button>
+          </form>
+          <p class="muted">The file stays on this computer (<code>.data/good.json</code>) and is never committed.</p>
+        </div>
+      </details>
+
+      <fieldset id="filters" class="filters" hidden>
+        <legend>Filters</legend>
+        <label>Set <select id="f-set"><option value="">All sets</option></select></label>
+        <label>Slot
+          <select id="f-slot">
+            <option value="">All slots</option>
+            <option>Flower</option><option>Plume</option><option>Sands</option><option>Goblet</option><option>Circlet</option>
+          </select>
+        </label>
+        <label>Main stat <select id="f-main"><option value="">Any</option></select></label>
+        <label>Has substat <select id="f-sub"><option value="">Any</option></select></label>
+        <label>Equipped on <select id="f-loc"><option value="">Anyone or no one</option><option value="__equipped">Anyone (equipped)</option><option value="__unequipped">No one (unequipped)</option></select></label>
+        <label>Rarity
+          <select id="f-rarity">
+            <option value="">Any</option><option value="5">5-star</option><option value="4">4-star</option><option value="3">3-star and below</option>
+          </select>
+        </label>
+        <label>Min level
+          <select id="f-level">
+            <option value="0">+0</option><option value="4">+4</option><option value="8">+8</option><option value="12">+12</option><option value="16">+16</option><option value="20">+20</option>
+          </select>
+        </label>
+        <button type="button" id="reset-filters">Reset filters</button>
+      </fieldset>
+
+      <p id="count" class="muted" aria-live="polite"></p>
+
+      <div class="table-wrap">
+        <table id="artifact-table" class="artifact-table" hidden>
+          <caption class="visually-hidden">Artifacts. Column headers with buttons can be sorted.</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-sort="set"><button type="button">Set</button></th>
+              <th scope="col" data-sort="slot"><button type="button">Slot</button></th>
+              <th scope="col" data-sort="rarity"><button type="button">Rarity</button></th>
+              <th scope="col" data-sort="level"><button type="button">Level</button></th>
+              <th scope="col" data-sort="main"><button type="button">Main stat</button></th>
+              <th scope="col">Substats</th>
+              <th scope="col" data-sort="cv"><button type="button">Crit Value</button></th>
+              <th scope="col" data-sort="location"><button type="button">Equipped on</button></th>
+            </tr>
+          </thead>
+          <tbody id="artifact-rows"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Equipped artifacts come from HoYoLAB. The full inventory comes from your imported GOOD file. Crit Value = 2 × CRIT Rate + CRIT DMG from substats.</p>
+    </footer>
+  </body>
+</html>
