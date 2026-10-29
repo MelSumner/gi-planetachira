@@ -38,11 +38,21 @@ function sendJson(res: ServerResponse, status: number, body: unknown) {
   res.end(JSON.stringify(body));
 }
 
+// Only answer to names that mean this machine. Otherwise a website could use DNS rebinding
+// to point its own hostname at 127.0.0.1 and talk to this server as if it were same-origin.
+const ALLOWED_HOSTS = new Set(
+  ['127.0.0.1', 'localhost', '[::1]', HOST.includes(':') ? `[${HOST}]` : HOST]
+    .filter((h) => h !== '0.0.0.0' && h !== '[::]')
+    .map((h) => `${h}:${PORT}`),
+);
+
+const isAllowedHost = (req: IncomingMessage) => ALLOWED_HOSTS.has((req.headers.host ?? '').toLowerCase());
+
 // Block cross-site writes: browsers can't send application/json cross-origin without a
-// CORS preflight (which we never approve), and any Origin header must be this server.
+// CORS preflight (which we never approve), and any Origin header must be one of our own hosts.
 function isSameOriginJson(req: IncomingMessage): boolean {
   const origin = req.headers.origin;
-  const sameOrigin = !origin || origin === `http://${req.headers.host}`;
+  const sameOrigin = !origin || (origin.startsWith('http://') && ALLOWED_HOSTS.has(origin.slice('http://'.length).toLowerCase()));
   return sameOrigin && (req.headers['content-type'] ?? '').startsWith('application/json');
 }
 
@@ -58,7 +68,8 @@ async function readBody(req: IncomingMessage): Promise<string> {
 }
 
 const server = createServer(async (req, res) => {
-  const url = new URL(req.url ?? '/', `http://${req.headers.host ?? 'localhost'}`);
+  if (!isAllowedHost(req)) return sendJson(res, 421, { error: 'Unknown host' });
+  const url = new URL(req.url ?? '/', `http://${req.headers.host}`);
 
   if (url.pathname === '/api/inventory') {
     if (req.method !== 'POST' && req.method !== 'DELETE') return sendJson(res, 405, { error: 'Method not allowed' });

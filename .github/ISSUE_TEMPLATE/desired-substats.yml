@@ -1,0 +1,37 @@
+name: Update desired substats
+description: Change which artifact substats a character should have.
+title: "Desired substats: "
+labels: ["desired-substats"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Desired substats decide which substats get a ✓ and when a piece counts as **Perfect** (4 are needed for that).
+        Main stats still come from HoYoLAB and can't be changed here.
+
+        To apply the change, open **Build check** in the local app, choose **Edit desired substats** for the character, save, then run `npm run export` and push.
+  - type: input
+    id: character
+    attributes:
+      label: Character
+      description: Name as it appears in the app, for example Hu Tao or Raiden Shogun.
+    validations:
+      required: true
+  - type: checkboxes
+    id: substats
+    attributes:
+      label: Desired substats
+      description: Choose up to 4.
+      options:
+        - label: ATK%
+        - label: HP%
+        - label: DEF%
+        - label: CRIT Rate
+        - label: CRIT DMG
+        - label: Energy Recharge
+        - label: Elemental Mastery
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why
+      description: Optional. For example, a build guide or a team need such as extra Energy Recharge.

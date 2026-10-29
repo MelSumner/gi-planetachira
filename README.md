@@ -18,7 +18,7 @@ npm run dev                     # same, restarts on source changes
 
 The page loads the default UID automatically. Use `?uid=<uid>` or the form to view another player. **Refresh** bypasses the cache. Character tabs support arrow keys, Home and End.
 
-The server is required because Enka sends no CORS headers, so a browser can't call it directly. It exposes:
+The server is required because Enka sends no CORS headers, so a browser can't call it directly. It only answers requests addressed to `127.0.0.1`, `localhost`, `[::1]` or a specific `HOST` on its port; anything else gets `421`, which blocks DNS rebinding attacks from websites. Saving data also requires a JSON request from one of those origins. It exposes:
 - `GET /api/profile/:uid` returns the normalized `Profile` JSON. Add `?refresh` to skip the cache and `&lang=ja` to change the language.
 - `GET /api/roster/:uid` returns **all owned characters** from HoYoLAB (requires `HOYOLAB_COOKIE`). Add `?refresh` to skip the 5-minute cache.
 - `GET /api/characters/:uid` returns **every owned character** from HoYoLAB `character/detail`, in the same shape as showcase characters (requires `HOYOLAB_COOKIE`).
